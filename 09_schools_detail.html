@@ -1,0 +1,1295 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ВКС</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,500,500italic&amp;subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/datatables/datatables.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/datatables/datatables.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=480" />
+    </head>
+
+    <body>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <header>
+                <div class="header-inner">
+                    <div class="header-left">
+                        <a href="#" class="header-user"><span>Личный кабинет</span></a>
+
+                        <div class="header-social">
+                            <a href="#" class="header-social-1"></a>
+                            <a href="#" class="header-social-2"></a>
+                            <a href="#" class="header-social-3"></a>
+                            <a href="#" class="header-social-4"></a>
+                            <a href="#" class="header-social-5"></a>
+                        </div>
+
+                        <div class="logo"><a href="#"><img src="images/logo.png" alt="" width="282" height="120" /></a></div>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="header-contacts">
+                            <a href="#" class="header-address"><span>Адреса школ</span></a>
+                            <a href="#" class="header-phone"><span><em>+7 495</em> 737-52-25</span></a>
+                            <div class="header-callback">
+                                <a href="#" class="header-callback-close"></a>
+                                <div class="header-callback-content">
+                                    <div class="header-callback-text">Оставьте свой номер телефона и мы перезвоним вам в ближайшее время</div>
+                                    <form action="#" method="post">
+                                        <div class="form-input"><input type="text" name="phone" class="required maskPhone" /></div>
+                                        <div class="form-submit"><input type="submit" value="ок" /></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="windows/order.html" class="header-link-order window-link">Заявка на обучение</a>
+                        <a href="#" class="header-link-test">Пройти онлайн-тест</a>
+                    </div>
+
+                    <div class="header-center"><img src="images/N1.png" alt="" width="370" height="167" /></div>
+                </div>
+            </header>
+
+            <!-- mobile navigator -->
+            <div class="mobile-navigator">
+                <a href="#" class="mobile-navigator-link"></a>
+                <div class="mobile-navigator-container">
+                    <!-- mobile navigator langs -->
+                    <div class="mobile-navigator-langs">
+                        <div class="mobile-navigator-langs-list">
+                            <ul>
+                                <li class="active"><a href="#" class="mobile-navigator-lang-01">Английский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-02">Немецкий</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-03">Французский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-04">Итальянский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-05">Испанский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-06">Китайский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-07">Японский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-08">Чешский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-09">Арабский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-10">Португальский</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-11">Греческий</a></li>
+                                <li><a href="#" class="mobile-navigator-lang-12">Russian</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- mobile navigator langs END -->
+
+                    <!-- mobile navigator info tabs -->
+                    <div class="mobile-navigator-info-tabs">
+
+                        <!-- mobile navigator info tab -->
+                        <div class="mobile-navigator-info-tab active">
+                            <!-- mobile navigator info -->
+                            <div class="mobile-navigator-info">
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-01"></strong><span>Летние программы 2016</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-02"></strong><span>Экспресс программы 2016</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-03"></strong><span>Академический английский</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-04"></strong><span>Интенсивные курсы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-05"></strong><span>Однодневные тренинги</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-06"></strong><span>Общий курс для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-07"></strong><span>Деловой английский для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-08"></strong><span>Разговорные курсы и клубы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-09"></strong><span>Международные программы в Москве</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-10"></strong><span>Индивидуальное обучение</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-11"></strong><span>Обучение по Skype</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-12"></strong><span>Английский по доступным ценам</span></a></div>
+                            </div>
+                            <!-- mobile navigator info END -->
+                        </div>
+                        <!-- mobile navigator info tab END -->
+
+                        <!-- mobile navigator info tab -->
+                        <div class="mobile-navigator-info-tab">
+                            <!-- mobile navigator info -->
+                            <div class="mobile-navigator-info">
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-07"></strong><span>Деловой английский для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-08"></strong><span>Разговорные курсы и клубы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-09"></strong><span>Международные программы в Москве</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-10"></strong><span>Индивидуальное обучение</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-11"></strong><span>Обучение по Skype</span></a></div>
+                            </div>
+                            <!-- mobile navigator info END -->
+                        </div>
+                        <!-- mobile navigator info tab END -->
+
+                        <!-- mobile navigator info tab -->
+                        <div class="mobile-navigator-info-tab">
+                            <!-- mobile navigator info -->
+                            <div class="mobile-navigator-info">
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-03"></strong><span>Академический английский</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-04"></strong><span>Интенсивные курсы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-05"></strong><span>Однодневные тренинги</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-06"></strong><span>Общий курс для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-07"></strong><span>Деловой английский для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-08"></strong><span>Разговорные курсы и клубы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-09"></strong><span>Международные программы в Москве</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-10"></strong><span>Индивидуальное обучение</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-11"></strong><span>Обучение по Skype</span></a></div>
+                            </div>
+                            <!-- mobile navigator info END -->
+                        </div>
+                        <!-- mobile navigator info tab END -->
+
+                        <!-- mobile navigator info tab -->
+                        <div class="mobile-navigator-info-tab">
+                            <!-- mobile navigator info -->
+                            <div class="mobile-navigator-info">
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-02"></strong><span>Экспресс программы 2016</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-03"></strong><span>Академический английский</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-04"></strong><span>Интенсивные курсы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-05"></strong><span>Однодневные тренинги</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-06"></strong><span>Общий курс для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-07"></strong><span>Деловой английский для взрослых</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-08"></strong><span>Разговорные курсы и клубы</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-09"></strong><span>Международные программы в Москве</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-10"></strong><span>Индивидуальное обучение</span></a></div>
+                                <div class="mobile-navigator-info-item"><a href="#"><strong class="mobile-navigator-info-item-11"></strong><span>Обучение по Skype</span></a></div>
+                            </div>
+                            <!-- mobile navigator info END -->
+                        </div>
+                        <!-- mobile navigator info tab END -->
+
+                    </div>
+                    <!-- mobile navigator info tabs END -->
+                </div>
+            </div>
+            <!-- mobile navigator END -->
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="nav-inner">
+
+                    <div class="top-menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Дни открытых дверей</a></li>
+                            <li><a href="#">Методика обучения</a></li>
+                            <li><a href="#">Наши преподаватели</a></li>
+                            <li><a href="#">Отзывы студентов и учителей</a></li>
+                            <li><a href="#">Видео уроков и мероприятий</a></li>
+                            <li><a href="#">Пресс-центр</a></li>
+                            <li><a href="#">Адреса школ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </div>
+
+                    <a href="#" class="top-menu-link"></a>
+
+                    <a href="#" class="search-link"></a>
+
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="search-input"><input type="text" value="" placeholder="Поиск по сайту" /></div>
+                            <div class="search-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-menu-with-submenu">
+                            <a href="#"><span class="nav-menu-1"></span>Курсы для&nbsp;взрослых</a>
+
+                            <!-- submenu -->
+                            <div class="submenu">
+                                <!-- submenu langs -->
+                                <div class="submenu-langs">
+                                    <div class="submenu-langs-list">
+                                        <ul>
+                                            <li class="active"><a href="#" class="submenu-lang-01">Английский</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                            <li><a href="#" class="submenu-lang-04">Итальянский</a></li>
+                                            <li><a href="#" class="submenu-lang-05">Испанский</a></li>
+                                            <li><a href="#" class="submenu-lang-06">Китайский</a></li>
+                                            <li><a href="#" class="submenu-lang-07">Японский</a></li>
+                                            <li><a href="#" class="submenu-lang-08">Чешский</a></li>
+                                            <li><a href="#" class="submenu-lang-09">Арабский</a></li>
+                                            <li><a href="#" class="submenu-lang-10">Португальский</a></li>
+                                            <li><a href="#" class="submenu-lang-11">Греческий</a></li>
+                                            <li><a href="#" class="submenu-lang-12">Russian</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="submenu-langs-prev disabled"></a>
+                                    <a href="#" class="submenu-langs-next disabled"></a>
+                                </div>
+                                <!-- submenu langs END -->
+
+                                <!-- submenu tabs -->
+                                <div class="submenu-tabs">
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab active">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                        <!-- submenu banners -->
+                                        <div class="submenu-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- submenu banners END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                </div>
+                                <!-- submenu tabs END -->
+
+                            </div>
+                            <!-- submenu END -->
+
+                        </li>
+                        <li class="nav-menu-with-submenu">
+                            <a href="#"><span class="nav-menu-2"></span>Курсы&nbsp;для&nbsp;детей и&nbsp;подростков</a>
+
+                            <!-- submenu -->
+                            <div class="submenu">
+                                <!-- submenu langs -->
+                                <div class="submenu-langs">
+                                    <div class="submenu-langs-list">
+                                        <ul>
+                                            <li class="active"><a href="#" class="submenu-lang-01">Английский</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                            <li><a href="#" class="submenu-lang-04">Итальянский</a></li>
+                                            <li><a href="#" class="submenu-lang-05">Испанский</a></li>
+                                            <li><a href="#" class="submenu-lang-06">Китайский</a></li>
+                                            <li><a href="#" class="submenu-lang-07">Японский</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="submenu-langs-prev disabled"></a>
+                                    <a href="#" class="submenu-langs-next disabled"></a>
+                                </div>
+                                <!-- submenu langs END -->
+
+                                <!-- submenu tabs -->
+                                <div class="submenu-tabs">
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab active">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                        <!-- submenu banners -->
+                                        <div class="submenu-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- submenu banners END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                </div>
+                                <!-- submenu tabs END -->
+
+                            </div>
+                            <!-- submenu END -->
+
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-3"></span>Курсы для преподавателей</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-4"></span>Международные экзамены</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-5"></span>Обучение зарубежом</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-6"></span>Корпоративное обучение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <div class="breadcrumbs">
+                <a href="#">Школа иностранных языков</a><span></span><a href="#">Адреса школ</a><span></span><a href="#">ВКС Кунцевская</a><span></span>О школе
+            </div>
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- left -->
+                <div class="left">
+                    <a href="#" class="left-menu-mobile"></a>
+                    <div class="left-menu-wrap">
+                        <div class="left-menu">
+                            <ul>
+                                <li class="open active">
+                                    <a href="#"><div>ВКС Кунцевская</div></a>
+                                    <ul>
+                                        <li><a href="#"><div>О школе</div></a></li>
+                                        <li><a href="#"><div>Новости</div></a></li>
+                                        <li><a href="#"><div>Расписание курсов</div></a></li>
+                                        <li><a href="#"><div>Преподаватели</div></a></li>
+                                        <li><a href="#"><div>Отзывы</div></a></li>
+                                        <li><a href="#"><div>Фото-архив</div></a></li>
+                                        <li><a href="#"><div>Контакты школы</div></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- left END -->
+
+                <!-- content -->
+                <div class="content">
+                    <div class="content-wrap">
+
+                        <h1>ВКС Кунцевская</h1>
+
+                        <!-- school tabs -->
+                        <div class="school-tabs">
+                            <ul>
+                                <li class="active"><a href="#">Контакты</a></li>
+                                <li><a href="#">О школе</a></li>
+                                <li><a href="#">Директор школы</a></li>
+                                <li><a href="#">День открытых дверей</a></li>
+                            </ul>
+                        </div>
+                        <!-- school tabs END -->
+
+                        <!-- school tabs container -->
+                        <div class="school-tabs-container">
+
+                            <!-- school tabs content -->
+                            <div class="school-tabs-content active">
+                                <div class="school-info">
+                                    <div class="detail">
+                                        <div class="detail-inner">
+                                            <div class="detail-row">
+                                                <div class="detail-row-name">Адрес</div>
+                                                <div class="detail-row-value">
+                                                    Рублёвское шоссе, 16, корпус 1.
+                                                    <div class="school-link-map"><a href="windows/school.html" class="window-link">Как добраться</a></div>
+                                                </div>
+                                            </div>
+
+                                            <div class="detail-row">
+                                                <div class="detail-row-name">Телефоны</div>
+                                                <div class="detail-row-value">+7 (495) 737-52-25, +7 (495) 258-00-04</div>
+                                            </div>
+
+                                            <div class="detail-row">
+                                                <div class="detail-row-name">Email</div>
+                                                <div class="detail-row-value"><a href="#">molod@bkc.ru</a></div>
+                                            </div>
+
+                                            <div class="detail-row">
+                                                <div class="detail-row-name">График&nbsp;работы</div>
+                                                <div class="detail-row-value">
+                                                    <div class="schedule">
+                                                        <div class="schedule-row">
+                                                            <div class="schedule-row-name">Пн–Чт</div>
+                                                            <div class="schedule-row-value">10:00–21:30</div>
+                                                        </div>
+                                                        <div class="schedule-row">
+                                                            <div class="schedule-row-name">Пт</div>
+                                                            <div class="schedule-row-value">10:00–19:00</div>
+                                                        </div>
+                                                        <div class="schedule-row schedule-row-weekend">
+                                                            <div class="schedule-row-name">Сб–Вс</div>
+                                                            <div class="schedule-row-value">выходные</div>
+                                                        </div>
+                                                    </div>
+
+                                                    <p>Дорогие друзья!<br />Школа ВКС на Речном ведет набор как в летние группы, так и в группы на новый учебный год. Мы будем рады организовать для вас обучение в любые дни и в любое время с 9.00 до 21.00.</p>
+                                                    <p>Однако до 22 августа администрация школы позволила себе небольшой отпуск и работает по летнему расписанию: с 15.00 до 20.00 по вторникам и четвергам.</p>
+                                                    <p>По неотложным вопросам, пожалуйста, звоните +7(925)188-34-85. Адимистартор Милена.<br />И, конечно, записаться на обучение и получить информацию всегда можно по rechnoy@bkc.ru<br />Будем рады видеть Вас в числе студенов нашей школы!</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="detail-row">
+                                                <div class="detail-row-name">Социальные сети</div>
+                                                <div class="detail-row-value">
+                                                    <a href="#" class="school-social school-social-1"></a>
+                                                    <a href="#" class="school-social school-social-2"></a>
+                                                    <a href="#" class="school-social school-social-3"></a>
+                                                    <a href="#" class="school-social school-social-4"></a>
+                                                    <a href="#" class="school-social school-social-5"></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="school-info-map">
+                                        <div id="map"></div>
+                                        <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                                        <script>
+                                            ymaps.ready(init);
+
+                                            var myMap;
+
+                                            function init() {
+                                                myMap = new ymaps.Map('map', {
+                                                    center: [55.755768, 37.617671],
+                                                    zoom: 16,
+                                                    controls: ['zoomControl']
+                                                });
+
+                                                myMap.behaviors.disable('scrollZoom');
+
+                                                myPlacemark = new ymaps.Placemark([55.856433, 37.4714], {}, {
+                                                    iconLayout: 'default#image',
+                                                    iconImageHref: 'images/map-icon-blue-big.png',
+                                                    iconImageSize: [74, 57],
+                                                    iconImageOffset: [-23, -57]
+                                                });
+                                                myMap.geoObjects.add(myPlacemark);
+                                                myMap.setCenter([55.856433, 37.4714]);
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- school tabs content END -->
+
+                            <!-- school tabs content -->
+                            <div class="school-tabs-content">
+                                <p>Школа ВКС-Кунцево c 1997 года входит в состав самой крупной сети языковых школ ВКС International House.<br />На наших курсах английского языка на Рублёвском шоссе вы найдете огромный выбор образовательных программ для взрослых и детей, созданных с учётом возраста, уровня и целей, которые вы ставите перед собой.</p>
+                                <p>Все преподаватели школы, прошедшие строгий отбор, обладают международными педагогическими квалификациями. Сеть школ иностранных языков ВКС Internaional House занимает первое место в независимом профессиональном рейтинге SchoolRate.</p>
+                                <p>Сертификаты IH, которые вы получаете у нас, действительны по всему миру, и пригодятся вам при устройстве на работу, продвижении по службе или обучении в вузе.</p>
+                                <p>ВКС-Кунцево начала свою работу на западе Москвы в январе 1997 года. Мы используем самые современные учебные пособия и методики преподавания, разработанные специалистами ведущих мировых лингвистических центров. Помимо занятий в классе, студенты имеют доступ к большому количеству тщательно отобранных образовательных ресурсов, мультимедийным обучающим программам, библиотеке и видеотеке.</p>
+                            </div>
+                            <!-- school tabs content END -->
+
+                            <!-- school tabs content -->
+                            <div class="school-tabs-content">
+                                <div class="director">
+                                    <div class="director-photo"><img src="files/director.jpg" alt="" /></div>
+                                    <div class="director-text">
+                                        <p>Школа ВКС-Кунцево c 1997 года входит в состав самой крупной сети языковых школ ВКС International House.</p>
+                                        <p>На наших курсах английского языка на Рублёвском шоссе вы найдете огромный выбор образовательных программ для взрослых и детей, созданных с учётом возраста, уровня и целей, которые вы ставите перед собой.</p>
+                                        <p>Все преподаватели школы, прошедшие строгий отбор, обладают международными педагогическими квалификациями. Сеть школ иностранных языков ВКС Internaional House занимает первое место в независимом профессиональном рейтинге SchoolRate.</p>
+                                        <p><strong>Митюкова Ксения</strong><br />Директор школы</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- school tabs content END -->
+
+                            <!-- school tabs content -->
+                            <div class="school-tabs-content">
+
+                                <!-- openday -->
+                                <div class="openday">
+                                    <div class="openday-text">
+                                        <div class="openday-title"><a href="#">International Academic Programmes Centre (Академический Английский, подготовка к IELTS, TOEFL, GMAT, GRE; Foundation, Pre-Masters в Москве)</a></div>
+                                        <div class="openday-anonce">Подготовка к вузам. Все об IELTS. Подготовка к IELTS, TOEFL, GMAT, GRE. Спикеры: Wayne Rimmer (Академический директор ВКС-IH), Мария Молашенко (Академический директор IAPC ВКС-IH)</div>
+                                    </div>
+                                    <div class="openday-date"><span>10</span> июня <strong>18:30</strong></div>
+                                </div>
+                                <!-- openday END -->
+
+                            </div>
+                            <!-- school tabs content END -->
+
+                        </div>
+                        <!-- school tabs container END -->
+
+                        <div class="school-banners">
+                            <div class="main-banner-3">
+                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                <a href="#" class="main-banner-link">Заказать</a>
+                            </div>
+                            <div class="main-banner-5">
+                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                <a href="#" class="main-banner-link">Заказать</a>
+                            </div>
+                        </div>
+
+                        <h2>Горящие группы</h2>
+
+                        <div class="hot-courses">Курсы английского языка для взрослых <span></span> Общий курс английского языка</div>
+
+                        <!-- timetable list -->
+                        <div class="timetable-list timetable-list-school">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Уровень</th>
+                                        <th data-orderable="false">Дни недели</th>
+                                        <th>Время</th>
+                                        <th>Дата старта</th>
+                                        <th>Стоимость</th>
+                                        <th data-orderable="false"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Beginner</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day">Пн</div>
+                                                <div class="timetable-week-day active">Вт</div>
+                                                <div class="timetable-week-day">Ср</div>
+                                                <div class="timetable-week-day active">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>9 800</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Elementary</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day">Пн</div>
+                                                <div class="timetable-week-day active">Вт</div>
+                                                <div class="timetable-week-day">Ср</div>
+                                                <div class="timetable-week-day active">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>11 040</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Pre-intermediate</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day active">Пн</div>
+                                                <div class="timetable-week-day">Вт</div>
+                                                <div class="timetable-week-day active">Ср</div>
+                                                <div class="timetable-week-day">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>12 240</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Elementary</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day active">Пн</div>
+                                                <div class="timetable-week-day">Вт</div>
+                                                <div class="timetable-week-day active">Ср</div>
+                                                <div class="timetable-week-day">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day active">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>13 800</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- timetable list END -->
+
+                        <div class="hot-courses">Курсы английского языка для взрослых <span></span> Общий курс английского языка</div>
+
+                        <!-- timetable list -->
+                        <div class="timetable-list timetable-list-school">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Уровень</th>
+                                        <th data-orderable="false">Дни недели</th>
+                                        <th>Время</th>
+                                        <th>Дата старта</th>
+                                        <th>Стоимость</th>
+                                        <th data-orderable="false"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a href="#">Beginner</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day">Пн</div>
+                                                <div class="timetable-week-day active">Вт</div>
+                                                <div class="timetable-week-day">Ср</div>
+                                                <div class="timetable-week-day active">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>9 800</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Elementary</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day">Пн</div>
+                                                <div class="timetable-week-day active">Вт</div>
+                                                <div class="timetable-week-day">Ср</div>
+                                                <div class="timetable-week-day active">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>11 040</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Pre-intermediate</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day active">Пн</div>
+                                                <div class="timetable-week-day">Вт</div>
+                                                <div class="timetable-week-day active">Ср</div>
+                                                <div class="timetable-week-day">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>12 240</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="#">Elementary</a></td>
+                                        <td>
+                                            <div class="timetable-week">
+                                                <div class="timetable-week-day active">Пн</div>
+                                                <div class="timetable-week-day">Вт</div>
+                                                <div class="timetable-week-day active">Ср</div>
+                                                <div class="timetable-week-day">Чт</div>
+                                                <div class="timetable-week-day">Пт</div>
+                                                <div class="timetable-week-day timetable-weekend-day active">Сб</div>
+                                                <div class="timetable-week-day timetable-weekend-day">Вс</div>
+                                            </div>
+                                        </td>
+                                        <td>19:00–21:15</td>
+                                        <td>09.02.2016</td>
+                                        <td><strong>13 800</strong> <span class="rouble">i</span>/мес</td>
+                                        <td><a href="#" class="btn">Записаться</a></div></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- timetable list END -->
+
+                        <!-- order -->
+                        <div class="order order-wide">
+                            <h2>Сложно выбрать?</h2>
+                            <div class="order-text">Оставьте заявку, и наши специалисты помогут найти максимально подходящий для вас курс!</div>
+                            <form action="#" method="post">
+                                <div class="form-row">
+                                    <div class="form-label">Ваш телефон</div>
+                                    <div class="form-field">
+                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-label">Уровень языка</div>
+                                    <div class="form-field">
+                                        <div class="form-select">
+                                            <select name="level" data-placeholder="Уровень языка" class="required">
+                                                <option value=""></option>
+                                                <option value="1">Начинающий</option>
+                                                <option value="2">Средний</option>
+                                                <option value="3">Высокий</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <div class="form-label">Удобное время занятий</div>
+                                    <div class="form-field">
+                                        <div class="form-radios">
+                                            <div class="form-radio"><span><input type="radio" name="time" value="1" checked="checked" /></span>Любое</div>
+                                            <div class="form-radio"><span><input type="radio" name="time" value="2" /></span>Утро</div>
+                                            <div class="form-radio"><span><input type="radio" name="time" value="3" /></span>День</div>
+                                            <div class="form-radio"><span><input type="radio" name="time" value="4" /></span>Вечер</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-submit"><input type="submit" value="Подать заявку" /></div>
+                            </form>
+                        </div>
+                        <!-- order END -->
+
+                        <!-- school news header -->
+                        <div class="school-news-header">
+                            <h2>Новости и акции школы</h2>
+                            <a href="#" class="school-news-all">Все новости</a>
+                        </div>
+                        <!-- school news header END -->
+
+                        <!-- school news -->
+                        <div class="school-news">
+                            <div class="school-news-item">
+                                <div class="school-news-title"><a href="#">Языковое лето в школе ВКС-Кунцево</a></div>
+                                <div class="school-news-anonce">Лето - благодатная пора для изучения иностранных языков. Приглашаем всех желающих начать индивидуальные занятия в школе ВКС-Кунцево!</div>
+                                <div class="school-news-tag"><a href="#">/ Летние курсы</a></div>
+                            </div>
+
+                            <div class="school-news-item">
+                                <div class="school-news-title"><a href="#">Artclub BKC</a></div>
+                                <div class="school-news-anonce">Уважаемые родители! Приглашаем вас и ваших замечательных малышей записаться на занятия в Artclub BKC! Специально для вашего удобства занятия будут проходить вечером 17:00-19:00 по вторникам и четвергам.</div>
+                                <div class="school-news-tag"><a href="#">/ Artclub BKC</a></div>
+                            </div>
+
+                            <div class="school-news-item">
+                                <div class="school-news-title"><a href="#">Академия BKC-kids</a></div>
+                                <div class="school-news-anonce">Приглашаем вас принять участие в летних программах Академии ВКС-kids в школе ВКС-Кунцево. Специально для вас мы подготовили 7 увлекательных сессий на английском языке, которые позволят вашему ребёнку даже на каникулах проводить время с пользой.</div>
+                                <div class="school-news-tag"><a href="#">/ BKC-kids</a></div>
+                            </div>
+                        </div>
+                        <!-- school news END -->
+
+                        <hr />
+
+                        <!-- school news header -->
+                        <div class="school-news-header">
+                            <h2>Преподаватели школы</h2>
+                            <a href="#" class="school-news-all">Все Преподаватели</a>
+                        </div>
+                        <!-- school news header END -->
+
+                        <!-- teachers -->
+                        <div class="teachers teachers-school">
+
+                            <!-- teacher -->
+                            <div class="teacher">
+                                <div class="teacher-photo"><a href="windows/teacher.html" class="window-link"><img src="files/teacher-1.jpg" alt="" /></a></div>
+                                <div class="teacher-name"><a href="windows/teacher.html" class="window-link">Ирина Грекова</a></div>
+                                <div class="teacher-name-en">Irina Grekova</div>
+                                <div class="teacher-where">CELTA, Delta, Master's in TESOL</div>
+                            </div>
+                            <!-- teacher END -->
+
+                            <!-- teacher -->
+                            <div class="teacher">
+                                <div class="teacher-photo"><a href="windows/teacher.html" class="window-link"><img src="files/teacher-2.jpg" alt="" /></a></div>
+                                <div class="teacher-name"><a href="windows/teacher.html" class="window-link">Эдвард Эванс</a></div>
+                                <div class="teacher-name-en">Edwards Evans</div>
+                                <div class="teacher-where">PhD in Chemistry, CELTA, Delta, ADOS</div>
+                            </div>
+                            <!-- teacher END -->
+
+                            <!-- teacher -->
+                            <div class="teacher">
+                                <div class="teacher-photo"><a href="windows/teacher.html" class="window-link"><img src="files/teacher-3.jpg" alt="" /></a></div>
+                                <div class="teacher-name"><a href="windows/teacher.html" class="window-link">Эсте Коетзе</a></div>
+                                <div class="teacher-name-en">Este Coetzee</div>
+                                <div class="teacher-where">CELTA</div>
+                            </div>
+                            <!-- teacher END -->
+
+                            <!-- teacher -->
+                            <div class="teacher">
+                                <div class="teacher-photo"><a href="windows/teacher.html" class="window-link"><img src="files/teacher-4.jpg" alt="" /></a></div>
+                                <div class="teacher-name"><a href="windows/teacher.html" class="window-link">Дэниел Стаскевич</a></div>
+                                <div class="teacher-name-en">Daniel Staskiewicz</div>
+                                <div class="teacher-where">BA in History (minor in Russian Studies), CELTA</div>
+                            </div>
+                            <!-- teacher END -->
+
+                        </div>
+                        <!-- teachers END -->
+
+                        <hr />
+
+                        <!-- school news header -->
+                        <div class="school-news-header">
+                            <h2>Отзывы</h2>
+                            <a href="#" class="school-news-all">Все отзывы</a>
+                        </div>
+                        <!-- school news header END -->
+
+                        <!-- course responses -->
+                        <div class="course-responses">
+                            <!-- response -->
+                            <div class="response">
+                                <div class="response-text">
+                                    <div class="response-text-wrap">
+                                        <div class="response-text-inner">Придя первый раз в школу BKC, я сразу ощутил поддержку учителей, которые готовы были помочь мне в любую минуту. Именно это и помогло мне обрести уверенность в себе и затем успешно сдать экзамены в конце года. Курсы в BKC помогли мне не только выучить язык и свободно говорить на нём, но и завести новых друзей. Каждый урок наполнен различными увлекательными заданиями, которые и помогали быстро и эффективно выучить язык.<br /><br />Профессионализм учителей всегда восхищал меня. На уроках учишься не только теории, которая необходима для сдачи экзаменов, но и узнаешь много нужного и интересного из опыта самих учителей. Индивидуальный подход к каждому ученику - это то, что помогло всем успешно сдать экзамены. Постоянные консультации с учителями помогли мне увидеть свои ошибки и недочёты, на которые необходимо было обращать внимание. Прогресс был очевиден и с каждым уроком я открывал для себя что-то новое. Учить язык становилось значительно легче и интереснее. После всего пройденного, осознаёшь, что учить иностранный язык совсем нетрудно – самое главное, чтобы была оказана необходимая поддержка и помощь.</div>
+                                    </div>
+                                    <div class="response-text-more"><a href="#" data-alttext="Свернуть">Подробнее</a></div>
+                                </div>
+                                <div class="response-author">
+                                    <div class="response-author-photo"><img src="files/response-1.jpg" alt="" /></div>
+                                    <div class="response-author-text">
+                                        <div class="response-author-name">Владислав Мухачёв, 17 лет</div>
+                                        <div class="response-author-info">Студент ВКС, Английский язык</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- response END -->
+
+                            <!-- response -->
+                            <div class="response">
+                                <div class="response-text">
+                                    <div class="response-text-wrap">
+                                        <div class="response-text-inner">ВКС-IH - это маленькая, но целая история жизни. Даже закончив обучение, продолжаешь интересоваться новостями, событиями и жизнью школы. Наверно, благодаря семейной и дружественной атмосфере и легкому общению.</div>
+                                    </div>
+                                    <div class="response-text-more"><a href="#" data-alttext="Свернуть">Подробнее</a></div>
+                                </div>
+                                <div class="response-author">
+                                    <div class="response-author-photo"><img src="files/response-2.jpg" alt="" /></div>
+                                    <div class="response-author-text">
+                                        <div class="response-author-name">Александр, 23 года</div>
+                                        <div class="response-author-info">Студент ВКС, Английский язык</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- response END -->
+
+                            <!-- response -->
+                            <div class="response">
+                                <div class="response-text">
+                                    <div class="response-text-wrap">
+                                        <div class="response-text-inner">
+                                            <p>Изучение английского языка я начала, когда мне было 3,5 года. Мама привела меня в школу ВКС на Речном Вокзале. Я мало что помню, но помню замечательную преподавательницу Ребекку.Она была из Австралии и нашла чудесный подход к нашей группе. Благодаря ей я полюбила английский. К сожалению, через год она уехала.</p>
+                                            <p>Другой преподаватель был не столь хорош, и мы поменяли курсы. С тех пор я посещала ряд школ и курсов. А в сентябре 2010 года я вернулась в ВКС, чтобы подготовиться к экзамену САЕ. На этот раз я училась в школе на Кузнецком мосту. Если честно, я получила от этого года меньше, чем рассчитывала и, к своему стыду, получила за экзамен оценку С. Все-таки, в изучении языка, да и других предметов, большую роль играет учитель. Нашу группу вела российская преподавательница, которая просто зачастую не могла нам объяснить, почему нужно делать так, а не иначе, в силу того, что она не носитель языка и не знает всех его тонкостей. Но, тем не менее, экзамен был сдан, и я, несмотря на неудачу, решила готовиться к СРЕ. Я вновь обратилась в ВКС, ибо все равно считаю, что это - лучшая школа в Москве, которая может подготовить к сдаче экзамена. И в этот раз мне очень повезло! Чудесный преподаватель Питер Кормак (Peter Cormack) из Великобритании, работавший в школе на Чистых прудах, смог не только заставить нашу группу из 4х человек поверить в собственные силы, но и дать очень много материала как по подготовке к экзамену, так и просто разговорной лексики и понимания тонкостей языка. Честно могу признаться, что за прошлый год мой уровень языка вырос настолько, что я свободно чувствую себя в любой среде. Справедливости ради, следует отметить, что я и сама очень много занималась, так как хотела сдать СРЕ на высший балл. Еще в группе по подготовке к САЕ я много читала на английском, а во время подготовки к СРЕ я совершенно забросила русскоязычную литературу. Пришло осознание того, что мне все равно, на каком языке написана книга - на русском или на английском. Я брала у Питера дополнительное домашнее задание и результат оправдал мои труды и надежды.</p>
+                                            <p>Хочу выразить благодарность школе ВКС, в частности за то, что они приглашают таких преподавателей, как Ребекка и Питер, которые являются очень интересными и приятными людьми. В лице Питера я обрела настоящего старшего друга. Несмотря на то, что он уже покинул Россию, я продолжаю с ним общаться и совершенствовать свой язык. Побольше бы таких преподавателей!</p>
+                                        </div>
+                                    </div>
+                                    <div class="response-text-more"><a href="#" data-alttext="Свернуть">Подробнее</a></div>
+                                </div>
+                                <div class="response-author">
+                                    <div class="response-author-photo"><img src="files/response-3.jpg" alt="" /></div>
+                                    <div class="response-author-text">
+                                        <div class="response-author-name">Дарья Жорник, 15 лет</div>
+                                        <div class="response-author-info">Студент ВКС, Английский язык</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- response END -->
+                        </div>
+                        <!-- course responses END -->
+
+                        <hr />
+
+                        <h2>Фотогалерея</h2>
+                        <p>Новый сезон разговорного клуба British Club открыт! Каждый понедельник все любители английского языка встречаются в книжном магазине Москва, чтобы практиковать свои разговорные навыки. 19 января состоялось обсуждение темы: "Ireland - The Emerald Isle". Благодарим нашего замечательного ведущего и квалифицированного преподавателя ВКС Hugh Curl за увлекательную беседу.</p>
+
+                        <!-- gallery -->
+                        <div class="gallery gallery-course">
+                            <div class="gallery-item"><a href="files/gallery-1-big.jpg" rel="files/gallery-1-preview.jpg"><img src="files/gallery-1.jpg" alt="" /></a></div>
+                            <div class="gallery-item"><a href="files/gallery-2-big.jpg" rel="files/gallery-2-preview.jpg"><img src="files/gallery-2.jpg" alt="" /></a></div>
+                            <div class="gallery-item"><a href="files/gallery-3-big.jpg" rel="files/gallery-3-preview.jpg"><img src="files/gallery-3.jpg" alt="" /></a></div>
+                            <div class="gallery-item"><a href="files/gallery-4-big.jpg" rel="files/gallery-4-preview.jpg"><img src="files/gallery-4.jpg" alt="" /></a></div>
+                        </div>
+                        <!-- gallery END -->
+
+                        <!-- item gallery -->
+                        <div class="item-gallery">
+                            <div class="item-gallery-container">
+                                <div class="item-gallery-load"><img src="images/blank.gif" alt="" /></div>
+                                <div class="item-gallery-title">Разговорный клуб «British Club»</div>
+                                <div class="item-gallery-text">Каждый понедельник все любители английского языка встречаются в книжном магазине Москва, чтобы практиковать свои разговорные навыки. 19 января состоялось обсуждение темы: "Ireland - The Emerald Isle".</div>
+                                <div class="item-gallery-big">
+                                    <strong>
+                                        <img src="images/blank.gif" alt="" />
+                                        <a href="#" class="item-gallery-prev"><span></span></a>
+                                        <a href="#" class="item-gallery-next"><span></span></a>
+                                    </strong>
+                                    <div class="item-gallery-loading"></div>
+                                </div>
+                                <div class="item-gallery-content">
+                                    <div class="item-gallery-list"></div>
+                                    <a href="#" class="item-gallery-list-prev"><span></span></a>
+                                    <a href="#" class="item-gallery-list-next"><span></span></a>
+                                </div>
+                            </div>
+                            <a href="#" class="item-gallery-close">закрыть</a>
+                        </div>
+                        <!-- item gallery END -->
+
+                    </div>
+                </div>
+                <!-- content END -->
+
+            </div>
+            <!-- container END -->
+
+            <!-- subscribe -->
+            <div class="subscribe">
+                <div class="subscribe-inner">
+                    <div class="subscribe-title">Будьте в курсе новостей и акций</div>
+                    <form action="#" method="post">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
+                        <div class="form-submit"><input type="submit" value="Ок" /></div>
+                    </form>
+                </div>
+            </div>
+            <!-- subscribe END -->
+
+            <footer>
+                <div class="footer-inner">
+
+                    <!-- footer content -->
+                    <div class="footer-content">
+                        <div class="footer-menu">
+                            <h3><a href="#">Курсы</a></h3>
+                            <ul>
+                                <li><a href="#">Курсы для взрослых</a></li>
+                                <li><a href="#">Курсы для детей и&nbsp;подростков</a></li>
+                                <li><a href="#">Корпоративное обучение</a></li>
+                                <li><a href="#">Международные экзамены</a></li>
+                                <li><a href="#">Обучение зарубежом</a></li>
+                                <li><a href="#">Курсы для преподавателей</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Иностранные языки</a></h3>
+                            <ul>
+                                <li><a href="#">Английский</a></li>
+                                <li><a href="#">Немецкий</a></li>
+                                <li><a href="#">Испанский</a></li>
+                                <li><a href="#">Итальянский</a></li>
+                                <li><a href="#">Французский</a></li>
+                                <li><a href="#">Китайский</a></li>
+                                <li><a href="#">Японский</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Обучение за рубежом</a></h3>
+                            <ul>
+                                <li><a href="#">Языковые курсы за рубежом</a></li>
+                                <li><a href="#">Программа Foundation Year</a></li>
+                                <li><a href="#">ВКС Pre-Masters Programme</a></li>
+                                <li><a href="#">Подготовка к поступлению</a></li>
+                                <li><a href="#">Специализированные курсы и&nbsp;тренинги</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Компания</a></h3>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Методика обучения</a></li>
+                                <li><a href="#">Отзывы студентов</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Пресс-центр</a></li>
+                                <li><a href="#">Работа в ВКС-IH</a></li>
+                                <li><a href="#">Jobs for teachers</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contacts">
+                            <h3><a href="#">Контакты</a></h3>
+                            <div class="footer-phones"><span>+7 (495)</span> 737-52-25<br /><span>+7 (495)</span> 258-00-04</div>
+                            <a href="#" class="footer-callback">Обратный звонок</a>
+                            <div class="footer-callback-window">
+                                <div class="footer-callback-content">
+                                    <div class="footer-callback-text">Оставьте свой номер телефона и мы перезвоним вам в ближайшее время</div>
+                                    <form action="#" method="post">
+                                        <div class="form-input"><input type="text" name="phone" class="required maskPhone" /></div>
+                                        <div class="form-submit"><input type="submit" value="ок" /></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="footer-email"><a href="#">info@bkc.ru</a></div>
+                            <div class="footer-social">
+                                <a href="#" class="footer-social-1"></a>
+                                <a href="#" class="footer-social-2"></a>
+                                <a href="#" class="footer-social-3"></a>
+                                <a href="#" class="footer-social-4"></a>
+                                <a href="#" class="footer-social-5"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer content END -->
+
+                    <!-- footer links -->
+                    <div class="footer-links">
+                        <div class="footer-logo"><img src="images/footer-logo.png" alt="" width="268" height="105" /></div>
+                        <div class="footer-charity">Выбирая обучение в BKC IH, Вы помогаете пройти реабилитацию детям, перенесшим тяжелые заболевания</div>
+                        <div class="footer-developer">Интернет-маркетинг<br /><a href="#" target="_blank">Smirnov Digital</a></div>
+                        <div class="footer-developer">Создание сайта<br /><a href="#" target="_blank">Bilingo Digital Agency</a></div>
+                    </div>
+                    <!-- footer links END -->
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+    </body>
+</html>
