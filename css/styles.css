@@ -1481,6 +1481,13 @@ header {background:#00bcc6}
     .subscribe-inner .form-submit {float:none; width:auto; padding:26px 0 0 0}
 }
 
+.subscribe-teacher {background:#fafafa}
+.subscribe-teacher .subscribe-inner {width:auto; padding:40px 30px}
+.subscribe-teacher .subscribe-title {width:42%; font-size:15px; line-height:20px; color:#555; text-transform:none; padding:0; font-weight:300}
+.subscribe-teacher .subscribe-inner form {width:53%; padding:0}
+.subscribe-teacher .subscribe-inner .form-input {width:calc(100% - 100px)}
+.subscribe-teacher .subscribe-inner .form-submit {width:90px}
+
 .main-subscribe {max-width:770px; background:#00bcc6; margin:0 auto}
 .main-subscribe .subscribe-inner {width:auto; padding:0 0 48px 0}
 .main-subscribe .subscribe-title {float:none; text-align:center; font-size:30px; width:auto; text-transform:none; padding:44px 0 0 0}
@@ -2322,3 +2329,20 @@ footer {background:#f7f7f7}
 .exam-schedule-content th:first-child {padding-left:0}
 .exam-schedule-content td {padding-left:20px}
 .exam-schedule-content td:first-child {padding-left:0}
+
+.event-date {width:100px; padding:14px 0 10px 0; text-align:center; background:#f5fbfb}
+.event-date span {font-weight:500; display:block; font-size:30px; line-height:30px; margin:0 0 -3px 0}
+.event-date strong {display:block; font-weight:500; font-size:20px}
+.event-date strong:before {content:""; display:block; width:72px; height:1px; margin:9px auto 15px auto; background:#daefef}
+
+.event-photos {line-height:0}
+.event-photos img {vertical-align:top; padding:10px 5px 0 0}
+
+.btn-order {display:inline-block; vertical-align:top; padding:0 53px; border-radius:3px; background:#fff003; height:40px; font-size:14px; color:#2b3138; text-align:center; text-transform:uppercase; font-weight:500; line-height:40px}
+.btn-order:hover {background:#ffde03; text-decoration:none}
+.btn-order:active {background:#ffb503}
+
+.method-status {border-top:1px solid #f4f4f4; border-bottom:1px solid #f4f4f4; padding:25px 0; margin:50px 0}
+.method-status:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.method-status-date {line-height:50px; height:50px; float:left; text-align:center; border-radius:3px; background:#fafafa; font-weight:500; width:270px}
+.method-status-link {float:left; line-height:50px; padding:0 0 0 30px}
