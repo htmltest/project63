@@ -53,8 +53,6 @@ dl dt {float:left; clear:left; width:140px; margin:0; padding:0; font-weight:500
 dl dd {margin:0 0 0 170px; padding:0; font-weight:300}
 hr {margin:35px 0 25px 0; padding:0; height:1px; background:#00bcc6; border:none}
 
-.page-list h1 {text-align:center}
-
 @media (max-width:1199px) {
     h1 {text-align:center}
     dl {padding:0; background:none}
@@ -373,17 +371,33 @@ header {background:#00bcc6}
 
 .search {display:none}
 
-@media (min-width:1200px) {
-    .search-open .search-link {background:url(../images/search-link-close.png) no-repeat center; z-index:91; margin-right:17px}
-    .search-open .search {display:block; position:absolute; right:0; top:25px; width:calc(100% - 40px); border:1px solid #00bcc6; border-radius:3px; background:#fff; z-index:90; height:47px}
-    .search form {margin:0; padding:0}
-    .search-input {margin:0 40px 0 48px; padding:0 0 0 20px}
-    .search-input input {vertical-align:top; border:none; background:none; margin:0; padding:11px 0; outline:none; width:100%; height:25px; font:300 15px/25px "Fira Sans", sans-serif; color:#555; -webkit-appearance:none}
-    .search-input input::-webkit-input-placeholder {opacity:1; color:#555}
-    .search-input input::-moz-placeholder {opacity:1; color:#555}
-    .search-input input:-ms-input-placeholder {opacity:1; color:#555}
+.search-open .search-link {background:url(../images/search-link-close.png) no-repeat center; z-index:91; margin-right:17px}
+.search-open .search {display:block; position:absolute; right:0; top:25px; width:calc(100% - 40px); border:1px solid #00bcc6; border-radius:3px; background:#fff; z-index:90; height:47px}
+.search form {margin:0; padding:0}
+.search-input {margin:0 40px 0 48px; padding:0 0 0 20px}
+.search-input input {vertical-align:top; border:none; background:none; margin:0; padding:11px 0; outline:none; width:100%; height:25px; font:300 15px/25px "Fira Sans", sans-serif; color:#555; -webkit-appearance:none}
+.search-input input::-webkit-input-placeholder {opacity:1; color:#555}
+.search-input input::-moz-placeholder {opacity:1; color:#555}
+.search-input input:-ms-input-placeholder {opacity:1; color:#555}
+.search-submit {position:absolute; left:14px; top:14px}
+.search-submit input {vertical-align:top; width:19px; height:19px; background:url(../images/search-link.png); border:none; margin:0; padding:0; outline:none; cursor:pointer; -webkit-appearance:none}
+
+@media (max-width:1199px) {
+    .search-open .search-link {background:url(../images/search-link-close-mobile.png) no-repeat center; width:20px; height:20px; margin-right:0; right:27px; top:27px}
+    .search-open .search {right:15px; top:12px; width:calc(100% - 30px); border:none; border-radius:0; background:rgba(0, 0, 0, .5); height:50px}
+    .search-input input {padding:12px 0; height:25px; font-size:18px; color:#fff}
+    .search-input input::-webkit-input-placeholder {color:#fff}
+    .search-input input::-moz-placeholder {color:#fff}
+    .search-input input:-ms-input-placeholder {color:#fff}
     .search-submit {position:absolute; left:14px; top:14px}
-    .search-submit input {vertical-align:top; width:19px; height:19px; background:url(../images/search-link.png); border:none; margin:0; padding:0; outline:none; cursor:pointer; -webkit-appearance:none}
+    .search-submit input {width:23px; height:23px; background:url(../images/search-link-mobile.png)}
+
+    .search-open .header-user {opacity:0}
+    .search-open .nav-menu-mobile-link {opacity:0}
+    .search-open .header-phone {opacity:0}
+    .search-open .top-menu-link {opacity:0}
+    .search-open .logo {opacity:0}
+    .search-open.page-main .logo {opacity:1}
 }
 
 .nav-menu {display:table; width:100%; margin:0; border-collapse:separate; border-spacing:25px 0}
@@ -561,8 +575,7 @@ header {background:#00bcc6}
 .container:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 
 @media (max-width:1199px) {
-    .container {padding-left:55px; padding-right:55px}
-    .page-main .container {padding-left:25px; padding-right:25px}
+    .container {padding-left:25px; padding-right:25px}
     .page-list .container {padding-left:15px; padding-right:15px}
 }
 
@@ -622,8 +635,7 @@ header {background:#00bcc6}
 
     .page-course .left-menu {display:block}
 
-/*    .left-menu-mobile {display:block; width:60px; height:67px; position:absolute; left:10px; top:7px; background:url(../images/left-menu-mobile.png)}
-    .visible-left-menu .left-menu-mobile {background-position:left -67px}*/
+    .left-menu-mobile {display:none; width:21px; height:17px;  background:url(../images/nav.png)}
 
     .left-menu-wrap {display:none; z-index:999; position:fixed; left:0; top:74px; width:100%; background:#fff; overflow:auto; height:calc(100% - 74px); outline:none}
     .left-menu ul {padding:0 46px 0 55px}
@@ -702,6 +714,9 @@ header {background:#00bcc6}
     .course-menu-parent {display:none}
 }
 
+.course-menu-parent-exam {font-size:13px; margin:0 25px 0 0}
+.course-menu-parent-exam .course-menu-parent-link {background:#294b9b}
+
 .course-menu ul {margin:0}
 .course-menu ul li {margin:0 0 -1px 0; padding:0; position:relative}
 .course-menu ul li:before {display:none}
@@ -735,6 +750,39 @@ header {background:#00bcc6}
 @media (max-width:1199px) {
     .course-menu {display:none}
 }
+
+.course-menu-exam {padding:0 25px 0 0}
+.course-menu-exam ul li a {font-size:13px; line-height:15px; color:#2b3138}
+.course-menu-exam ul li a div img {opacity:0}
+.course-menu-exam ul li a div img+img {opacity:1; background:#fff}
+.course-menu-exam ul li.active > a {font-weight:500}
+.course-menu-exam ul li.open > a {background:#ffcd03; font-weight:500}
+.course-menu-exam ul li ul li.active > a {background:#f8aa00; font-weight:500}
+.course-menu-exam ul li.open:after {content:""; display:block; width:0; height:0; position:absolute; right:-13px; top:0; border-left:13px solid #ffcd03; border-top:30px solid transparent; border-bottom:30px solid transparent}
+.course-menu-exam ul li ul li.active:after {border-left-color:#f8aa00}
+.course-menu-exam ul li ul li.active {margin-right:-25px}
+
+.exam-menu {font-size:13px; line-height:15px; text-transform:uppercase; border-top:3px solid #294b9b; margin:30px 25px 0 0; padding:28px 0 0 0}
+.exam-menu ul {margin:0}
+.exam-menu ul li {margin:0 0 -1px 0; padding:0; position:relative}
+.exam-menu ul li:before {display:none}
+.exam-menu ul li a {display:table; width:100%; border-top:1px solid #e5f8f9; line-height:20px; text-transform:uppercase; color:#2b3138}
+.exam-menu ul li a:hover {text-decoration:none; color:#2b3138}
+.exam-menu ul li:first-child > a {border-top:none}
+.exam-menu ul li a div {display:table-cell; height:59px; vertical-align:middle; padding:0 15px; position:relative}
+.exam-menu ul li.active {z-index:2}
+.exam-menu ul li.active:after {content:""; display:block; width:0; height:0; position:absolute; right:-13px; top:0; border-left:13px solid #ffcd03; border-top:30px solid transparent; border-bottom:30px solid transparent}
+.exam-menu ul li.active > a {background:#ffcd03}
+
+.exam-timetable-link {font-size:12px; line-height:15px}
+
+@media (max-width:1199px) {
+    .exam-menu {display:none}
+}
+
+.exam-detail-row {display:table; width:100%; border-top:1px solid #e1e1e1}
+.exam-detail-row:first-child {border-top:none}
+.exam-detail-col {display:table-cell; vertical-align:top; width:33.33%; padding:25px 0 26px 0}
 
 .right {float:right; width:235px}
 .right-banner {line-height:0; margin:0 0 28px 0}
@@ -807,6 +855,15 @@ header {background:#00bcc6}
 .order-wide .form-submit {float:right; margin:34px 0 0 0; width:170px}
 .order-wide .form-submit input {height:40px; line-height:40px; box-shadow:none; font-weight:300}
 
+@media (max-width:1199px) {
+    .order-wide .form-row {float:none; margin:20px 0 10px 0}
+    .order-wide .form-input {width:100%}
+    .order-wide .form-select {width:100%}
+    .order-wide .form-submit {width:auto; float:none}
+    .order-wide .form-radios {margin:0 0 0 -3px}
+    .order-wide .form-radio {width:calc(25% - 5px); margin:0 0 0 3px}
+}
+
 .school-news-header {margin:77px 0 0 0}
 .school-news-header:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .school-news-header h2 {margin:0; float:left}
@@ -819,6 +876,19 @@ header {background:#00bcc6}
 .school-news-anonce {font-size:14px; line-height:20px; letter-spacing:0; padding:18px 0 0 0; color:#808285}
 .school-news-tag {font-size:14px; line-height:20px; letter-spacing:0; color:#294b9b; padding:20px 0 0 0}
 .school-news-tag a {color:#294b9b}
+
+.school-news-all-mobile {display:none}
+
+@media (max-width:1199px) {
+    .school-news-item {display:none}
+    .school-news-item:first-child {display:block; width:auto}
+    .school-news-all {display:none}
+
+    .school-news-all-mobile {display:block; border:1px solid #e5e5e5; text-align:center; color:#0faab2; text-transform:uppercase; font-size:14px; line-height:38px}
+    .school-news-all-mobile:before {content:""; display:inline-block; vertical-align:middle; width:13px; height:10px; background:url(../images/school-news-all.png); margin:-2px 10px 0 0}
+    .school-news-all-mobile:hover {color:#00bcc6; text-decoration:none}
+    .school-news-all-mobile+hr {display:none}
+}
 
 .press-list {margin-top:-20px}
 .press-item {border-bottom:1px solid #ccf2f4; padding:24px 0 25px 0}
@@ -900,6 +970,18 @@ header {background:#00bcc6}
 
 .teachers-school {margin:20px -15px 55px -15px}
 .teachers-school .teacher {width:25%}
+
+.teachers-school-ctrl {display:none}
+
+@media (max-width:1199px) {
+    .teachers-school {width:100%; margin-left:0; margin-right:0; position:relative; overflow:hidden; white-space:nowrap}
+    .teachers-school .teacher {width:100%; padding-left:0; padding-right:0}
+    .teachers-school .teacher-photo {max-width:270px; margin:0 auto}
+    .teachers-school-ctrl {display:block; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:31px 0 0 0}
+    .teachers-school-ctrl a {display:inline-block; vertical-align:top; width:15px; height:15px; border-radius:9px; margin:0 0 0 14px; background:#e9e8e8}
+    .teachers-school-ctrl a:first-child {margin:0}
+    .teachers-school-ctrl a.active {background:#00bcc6}
+}
 
 .response {margin:0 0 60px 0}
 .response-text {border:1px solid #b2ebee; padding:24px 30px 23px 30px; position:relative}
@@ -1008,6 +1090,17 @@ header {background:#00bcc6}
 
 .gallery-course .gallery-item {width:33.33%}
 
+.school-gallery-ctrl {display:none}
+
+@media (max-width:1199px) {
+    .school-gallery {width:100%; margin-left:0; margin-right:0; position:relative; overflow:hidden; white-space:nowrap}
+    .school-gallery .gallery-item {width:100%; margin:0; padding-left:0; padding-right:0; white-space:normal}
+    .school-gallery-ctrl {display:block; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:31px 0 0 0}
+    .school-gallery-ctrl a {display:inline-block; vertical-align:top; width:15px; height:15px; border-radius:9px; margin:0 0 0 14px; background:#e9e8e8}
+    .school-gallery-ctrl a:first-child {margin:0}
+    .school-gallery-ctrl a.active {background:#00bcc6}
+}
+
 .item-gallery {position:fixed; left:-9999px; top:0; width:100%; height:100%; z-index:99997; overflow:auto; background:#fff}
 .item-gallery-open {left:0}
 .item-gallery-container {position:relative; width:970px; margin:0 auto}
@@ -1093,13 +1186,13 @@ header {background:#00bcc6}
 .main-banner-2 .main-banner-link,
 .main-banner-3 .main-banner-link  {border-color:rgba(255, 255, 255, .5); color:#fefefe}
 .main-banner-2 .main-banner-link:hover,
-.main-banner-3 .main-banner-link:hover {border-color:#fff}
+.main-banner-3 .main-banner-link:hover {border-color:#fff; background:#fff; color:#231f20}
 .main-banner-1 .main-banner-link,
 .main-banner-4 .main-banner-link,
 .main-banner-5 .main-banner-link  {border-color:rgba(43, 49, 56, .25); color:#2b3138}
 .main-banner-1 .main-banner-link:hover,
 .main-banner-4 .main-banner-link:hover,
-.main-banner-5 .main-banner-link:hover {border-color:#2b3138}
+.main-banner-5 .main-banner-link:hover {border-color:#231f20; background:#231f20; color:#fff}
 
 @media (max-width:1199px) {
     .main {margin:0; padding:26px 0 0 0}
@@ -1587,7 +1680,8 @@ footer {background:#f7f7f7}
 .school-feedback a:hover {text-decoration:none; color:#00bcc6}
 .school-feedback {padding:14px 0 30px 0}
 
-.school-tabs {margin:30px 0 0 0}
+.school-tabs {margin:30px 0 0 0; position:relative}
+.school-tabs-value {display:none}
 .school-tabs ul {margin:0}
 .school-tabs ul:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .school-tabs ul li {float:left; margin:0 1px 0 0; padding:3px 0 0 0}
@@ -1595,6 +1689,20 @@ footer {background:#f7f7f7}
 .school-tabs ul li.active {padding:0; border-top:3px solid #294b9b}
 .school-tabs ul li a {float:left; padding:13px 30px 10px 30px; font-weight:normal; color:#58595b; font-size:14px; text-decoration:none; text-transform:uppercase; background:#f5f5f5}
 .school-tabs ul li.active a {background:#fafafa}
+
+@media (max-width:1199px) {
+    .school-tabs-value {display:block; position:relative; padding:0 0 0 30px; height:50px; font-size:14px; font-weight:500; line-height:50px; color:#58595b; background:#f5f5f5; text-transform:uppercase}
+    .school-tabs-value:hover {text-decoration:none}
+    .school-tabs.open .school-tabs-value {background:#fff003}
+    .school-tabs-value:after {content:""; display:block; width:12px; height:7px; background:url(../images/school-tabs-value.png); position:absolute; right:30px; top:22px}
+    .school-tabs.open .school-tabs-value:after {background-position:left -7px}
+    .school-tabs ul {display:none}
+    .school-tabs.open ul {display:block; position:absolute; left:0; top:100%; width:100%; background:#fff003; z-index:99}
+    .school-tabs.open ul li.active {display:none}
+    .school-tabs.open ul li {float:none; margin:0; padding:0; border-top:1px solid #efe20d}
+    .school-tabs.open ul li a {display:block; float:none; padding:0 0 0 30px; height:50px; line-height:50px; background:none; color:#58595b}
+    .school-tabs.open ul li a:hover {background:#ffcd03}
+}
 
 .school-tabs-container {background:#fafafa; padding:20px 30px; position:relative}
 .school-tabs-content {position:absolute; left:-9999px; top:-9999px; width:100%}
@@ -1607,6 +1715,17 @@ footer {background:#f7f7f7}
 .school-info .detail-row:first-child .detail-row-value {padding-top:0}
 .school-info .detail-row:last-child .detail-row-name {padding-bottom:0}
 .school-info .detail-row:last-child .detail-row-value {padding-bottom:0}
+
+@media (max-width:1199px) {
+    .school-info .detail-inner {display:block}
+    .school-info .detail-row  {display:block}
+    .school-info .detail-row+.detail-row {border-top:1px solid #e4f7f7}
+    .school-info .detail-row:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+    .school-info .detail-row .detail-row-name {display:block; float:left; width:130px; padding-left:0; border-top:none}
+    .school-info .detail-row .detail-row-value {display:block; margin-left:130px; padding-left:0; border-top:none}
+    .school-info .detail-row-2 .detail-row-name {float:none; width:auto}
+    .school-info .detail-row-2 .detail-row-value {float:none; margin-left:0}
+}
 
 .school-social {display:inline-block; vertical-align:top; width:24px; height:24px; background:url(../images/schools-social.png)}
 .school-social-1 {background-position:left top}
@@ -1621,17 +1740,41 @@ footer {background:#f7f7f7}
 .school-info-map {float:right; width:340px}
 .school-info-map #map {height:320px}
 
+@media (max-width:1199px) {
+    .school-info .detail {float:none; width:auto}
+    .school-info-map {display:none}
+}
+
 .school-banners {padding:10px 0 0 0}
 .school-banners:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .school-banners .main-banner-3 {margin:0; background-position:right top; width:430px}
 .school-banners .main-banner-5 {margin:0; background-position:left top; width:430px}
 
+@media (max-width:1199px) {
+    .school-banners .main-banner-3  {float:none; margin:10px 0 0 0; width:auto}
+    .school-banners .main-banner-5  {float:none; margin:10px 0 0 0; width:auto}
+}
+
 .director:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .director-photo {float:left; width:320px; line-height:0}
 .director-text {margin:0 0 0 350px}
 
+@media (max-width:1199px) {
+    .director-photo {float:none; width:auto}
+    .director-photo img {width:100%}
+    .director-text {margin:0}
+}
+
 .school-tabs-content .openday {border:none}
 .school-tabs-content .openday-date {background:#fff; border-radius:3px}
+
+@media (max-width:1199px) {
+    .school-tabs-content .openday-date {float:left; margin:0 0 0 -100%; width:100px; padding:18px 0 16px 0; text-align:center; background:#fff}
+    .school-tabs-content .openday-date span {font-weight:500; display:block; font-size:20px; margin:0 5px 2px 5px}
+    .school-tabs-content .openday-date strong {display:block; font-weight:500}
+    .school-tabs-content .openday-date strong:before {display:block}
+    .school-tabs-content .openday-text {float:left; width:100%; padding:0 0 0 130px}
+}
 
 .detail-map #map {height:400px}
 
@@ -1688,7 +1831,11 @@ footer {background:#f7f7f7}
     .methods td {font-size:11px; line-height:16px}
 }
 
-.school-list-hint {text-align:center; font-size:14px; color:#808080; margin:-27px 0 0 0}
+.school-list-hint {font-size:14px; color:#808080; margin:-27px 0 0 0}
+
+@media (max-width:1199px) {
+    .school-list-hint {text-align:center}
+}
 
 .schools-tab #map {height:720px; margin:-15px}
 
@@ -1723,8 +1870,13 @@ footer {background:#f7f7f7}
 .school-list p {margin:10px 0 0 0}
 .school-list p:first-child {margin:0}
 
-.schools-view {text-align:center; margin:26px 0 9px 0}
-.schools-view ul {display:inline-block; vertical-align:top; margin:0}
+@media (max-width:1199px) {
+    .school-list th+th+th,
+    .school-list td+td+td {display:none}
+}
+
+.schools-view {margin:26px 0 9px -5px; position:relative}
+.schools-view ul {display:inline-block; vertical-align:top; margin:0; text-align:center}
 .schools-view ul li {float:left; margin:0 5px; padding:0}
 .schools-view ul li:before {display:none}
 .schools-view ul li a {display:block; position:relative; font-size:16px; line-height:38px; width:198px; height:38px; border:1px solid #00bcc6; border-radius:3px}
@@ -1740,6 +1892,34 @@ footer {background:#f7f7f7}
 .schools-view ul li a span.schools-view-3 {width:23px; height:16px; background:url(../images/schools-view-3.png)}
 .schools-view ul li.active a span.schools-view-3,
 .schools-view ul li a:hover span.schools-view-3 {background-position:left -16px}
+
+@media (max-width:1199px) {
+    .schools-view {margin-left:0}
+    .schools-view ul {width:100%}
+    .schools-view ul li {margin:0; width:33.33%}
+    .schools-view ul li a {width:100%; border:none; font-size:0; line-height:0; white-space:nowrap; position:relative; overflow:hidden; text-indent:9999px}
+    .schools-view ul li a span {display:block; position:absolute; left:50%; top:50%; vertical-align:top}
+    .schools-view ul li.active a,
+    .schools-view ul li a:hover {background:none}
+    .schools-view ul li a span.schools-view-1,
+    .schools-view ul li.active a span.schools-view-1,
+    .schools-view ul li a:hover span.schools-view-1 {margin:-9px 0 0 -8px; background-position:left top}
+    .schools-view ul li a span.schools-view-2,
+    .schools-view ul li.active a span.schools-view-2,
+    .schools-view ul li a:hover span.schools-view-2 {margin:-11px 0 0 -14px; background-position:left top}
+    .schools-view ul li a span.schools-view-3,
+    .schools-view ul li.active a span.schools-view-3,
+    .schools-view ul li a:hover span.schools-view-3 {margin:-8px 0 0 -12px; background-position:left top}
+}
+
+.schools-open {position:absolute; display:block; width:270px; height:40px; right:0; top:0; text-align:center; font-size:16px; line-height:40px; color:#2b3138; background:#fff003; border-radius:3px}
+.schools-open:before {content:""; display:inline-block; vertical-align:top; width:21px; height:22px; background:url(../images/schools-open.png); margin:12px 15px 0 0}
+.schools-open:hover {background:#ffde03; text-decoration:none}
+.schools-open:active {background:#ffb503}
+
+@media (max-width:1199px) {
+    .schools-open {position:relative; margin:30px auto; right:auto; top:auto}
+}
 
 .schools-tabs {position:relative; margin:0 15px}
 .schools-tab {position:absolute; left:-9999px; top:-9999px; width:100%}
@@ -1781,6 +1961,11 @@ footer {background:#f7f7f7}
 
 .hot-courses {font-weight:500; font-size:16px; line-height:25px; position:relative; color:#231f20; margin:25px 0}
 .hot-courses span {display:inline-block; vertical-align:middle; width:7px; height:11px; background:url(../images/hot-course-sep.png); margin:0 12px 0 13px}
+.hot-courses br {display:none}
+
+@media (max-width:1199px) {
+    .hot-courses br {display:block}
+}
 
 .popover {position:relative; z-index:999; width:370px; background:#fff; border:3px solid #00bcc6; box-shadow:0 0 15px rgba(43, 98, 101, .53); min-height:409px}
 .popover:before {content:""; display:block; width:17px; height:26px; background:url(../images/popup-arrow.png); position:absolute; left:-17px; top:41px}
@@ -1822,6 +2007,23 @@ footer {background:#f7f7f7}
 .timetable-week-day.active {border-color:#294b9b; background:#294b9b; color:#fff}
 .timetable-weekend-day.active {border-color:#ee771b; background:#ee771b; color:#fff}
 
+@media (max-width:1199px) {
+    .timetable-list table {display:block; border-top:2px solid #00bcc6; border-bottom:1px solid #00bcc6}
+    .timetable-list table thead {display:none}
+    .timetable-list table tbody {display:block}
+    .timetable-list table tr {display:block; position:relative; border-top:1px solid #eee; padding:20px 0}
+    .timetable-list table tr:first-child {border-top:none}
+    .timetable-list table tr:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+    .timetable-list table td:nth-child(1) {float:right; display:block; vertical-align:top; border-top:none; padding:5px 0 0 0; line-height:20px; width:calc(100% - 100px)}
+    .timetable-list table td:nth-child(2) {float:right; display:block; vertical-align:top; border-top:none; padding:11px 0 0 0; width:calc(100% - 100px)}
+    .timetable-list table td:nth-child(3) {display:block; width:80px; text-align:center; padding:6px 0; border:none; background:#f5fbfb; line-height:20px; font-size:15px; margin:32px 0 0 0}
+    .timetable-list table td:nth-child(4) {display:block; width:80px; text-align:center; padding:6px 0; border:none; background:#f5fbfb; font-weight:500; line-height:20px; font-size:15px; margin:-64px 0 0 0}
+    .timetable-list table td:nth-child(5) {display:block; position:absolute; right:0; top:19px; padding:0; border-top:none; width:auto}
+    .timetable-list table td:nth-child(6) {display:none}
+    .timetable-week {width:auto}
+    .timetable-week-day {width:35px}
+}
+
 .window-teacher {border:2px solid #0faab2; padding:40px; width:670px}
 .window-teacher-inner:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .window-teacher-photo {float:left; width:170px; line-height:0}
@@ -1830,6 +2032,12 @@ footer {background:#f7f7f7}
 .window-teacher-name {font-size:25px; line-height:25px; color:#2b3138; padding:8px 0 0 0}
 .window-teacher-name-eng {font-size:18px; padding:2px 0 0 0}
 .window-teacher-text h4 {font-weight:500}
+
+@media (max-width:1199px) {
+    .window-teacher {width:370px; padding-left:28px; padding-right:28px}
+    .window-teacher-photo {float:none; margin:0 auto 25px auto}
+    .window-teacher-text {float:none; width:auto}
+}
 
 .teacher-details {display:table; width:100%; margin:18px 0 25px 0}
 .teacher-details-row {display:table-row}
@@ -1850,12 +2058,22 @@ footer {background:#f7f7f7}
 .course-detail-col p {margin:25px 0 0 0}
 .course-detail-col p:first-child {margin:0}
 
+@media (max-width:1199px) {
+    .course-detail-col {display:block; width:auto; border-left:none}
+}
+
 .course-price {background:#00bcc6; color:#fff; padding:0 30px 14px 30px; margin:0 0 50px 0}
 .course-price:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .course-price-text {float:left; font-weight:normal; padding:12px 0 0 0}
 .course-price-text strong {display:block; font-size:20px}
 .course-price-link {float:right; width:210px; padding:18px 0 0 0}
 .course-price-link .btn {font-size:14px; height:40px; line-height:40px; box-shadow:none}
+
+@media (max-width:1199px) {
+    .course-price {text-align:center; padding-bottom:30px}
+    .course-price-text {float:none}
+    .course-price-link {float:none; width:auto}
+}
 
 .course-responses {margin:25px -15px; font-size:0; line-height:0; letter-spacing:-1px}
 .course-responses .response {margin:0; display:inline-block; vertical-align:top; padding-left:15px; padding-right:15px; width:33.33%; box-sizing:border-box; font-size:15px; line-height:25px; letter-spacing:0}
@@ -1867,6 +2085,17 @@ footer {background:#f7f7f7}
 .course-responses .response-author-info {padding:0; line-height:20px}
 
 .course-responses+hr {margin:75px 0}
+
+.school-responses-ctrl {display:none}
+
+@media (max-width:1199px) {
+    .school-responses {width:100%; margin-left:0; margin-right:0; position:relative; overflow:hidden; white-space:nowrap}
+    .school-responses .response {width:100%; margin:0; padding-left:0; padding-right:0; white-space:normal}
+    .school-responses-ctrl {display:block; text-align:center; font-size:0; line-height:0; letter-spacing:-1px; padding:31px 0 0 0}
+    .school-responses-ctrl a {display:inline-block; vertical-align:top; width:15px; height:15px; border-radius:9px; margin:0 0 0 14px; background:#e9e8e8}
+    .school-responses-ctrl a:first-child {margin:0}
+    .school-responses-ctrl a.active {background:#00bcc6}
+}
 
 .course-order .order-text {max-width:530px; padding:23px 0 25px 0}
 .course-order form {max-width:510px; background:#f5fbfb; padding:0; margin:0 auto}
@@ -2028,3 +2257,68 @@ footer {background:#f7f7f7}
 .window-school {border:2px solid #0faab2; padding:0 48px 28px 48px; width:770px}
 .window-school-map {margin:30px 0}
 .window-school-map #mapWindow {height:400px}
+
+@media (max-width:1199px) {
+    .window-school {width:370px; padding-left:28px; padding-right:28px}
+}
+
+.warning-link,
+.warning-content {display:none}
+
+.window-warning .window-overlay {background:#00bcc6}
+.window-warning .window-close {background-image:url(../images/window-close-2.png); color:#fff}
+
+.warning {width:470px; color:#fff; font-size:18px}
+.warning-logo {line-height:0}
+.warning h1 {color:#fff; margin:70px 0 46px 0}
+.warning-close {margin:51px 0 0 0}
+.warning-close a {display:block; font-size:16px; font-weight:500; line-height:50px; color:#2b3138; height:50px; text-decoration:none; background:#fff003; border-radius:3px; text-transform:uppercase; text-align:center}
+.warning-close a:hover {background:#ffde03}
+.warning-close a:active {background:#ffb503}
+
+.suggest-link {position:fixed; right:0; top:311px; z-index:99; display:block; width:130px; padding:19px 0 16px 47px; color:#fff; line-height:20px; font-weight:normal; background:#f00 url(../images/suggest.png) no-repeat 22px 16px}
+.suggest-link:hover {text-decoration:none}
+
+@media (max-width:1199px) {
+    .suggest-link {display:none}
+}
+
+.window-success {width:370px; padding:50px 150px; border:2px solid #0faab2; text-align:center}
+.window-success h1 {margin:0 0 47px}
+.window-success .btn {background:#00bcc6; color:#fff; box-shadow:none; margin-top:50px}
+.window-success .btn:hover {background:#2dd5de}
+.window-success .btn:active {background:#089ba3}
+
+@media (max-width:1199px) {
+    .window-success {padding-left:30px; padding-right:30px}
+}
+
+.subscribe-email {color:#00bcc6}
+
+.footnote {padding:0 0 0 40px; position:relative; margin:50px 0}
+.footnote-number {position:absolute; left:0; top:0; color:#f00}
+.footnote-link {color:#f00}
+
+.exam-schedule {border-bottom:1px solid #f4f4f4}
+.exam-schedule.open {border-bottom:none}
+.exam-schedule-header {display:block; margin:0 -15px; padding:0 15px; position:relative}
+.exam-schedule-header:hover {background:#f7f7f7; text-decoration:none}
+.exam-schedule-title {font-size:25px; line-height:25px; color:#2b3138; font-weight:normal; padding:23px 100px 25px 0}
+.exam-schedule-ctrl {position:absolute; right:15px; top:25px; display:none; font-size:12px; text-transform:uppercase; color:#0faab2}
+.exam-schedule-ctrl:after {content:""; display:inline-block; vertical-align:middle; width:13px; height:8px; background:url(../images/exam-schedule-ctrl.png); margin:-2px 0 0 10px}
+.exam-schedule-ctrl span {display:none}
+.exam-schedule-ctrl span:nth-child(1) {display:inline}
+.exam-schedule-header:hover .exam-schedule-ctrl {display:block}
+.exam-schedule.open .exam-schedule-ctrl {display:block}
+.exam-schedule.open .exam-schedule-ctrl span:nth-child(1) {display:none}
+.exam-schedule.open .exam-schedule-ctrl span:nth-child(2) {display:inline}
+.exam-schedule.open .exam-schedule-ctrl:after {background-position:left -8px}
+
+.exam-schedule-content {display:none; line-height:20px; margin-top:-10px}
+.exam-schedule.open .exam-schedule-content {display:block}
+.exam-schedule-content table {border-bottom-width:1px}
+.exam-schedule-content tfoot tr:first-child td {border-top-width:1px; text-align:center}
+.exam-schedule-content th {line-height:15px; color:#8e8e8e; padding-left:20px}
+.exam-schedule-content th:first-child {padding-left:0}
+.exam-schedule-content td {padding-left:20px}
+.exam-schedule-content td:first-child {padding-left:0}

@@ -19,6 +19,7 @@
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/datatables/datatables.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=480" />
@@ -524,6 +525,7 @@
 
                         <!-- school tabs -->
                         <div class="school-tabs">
+                            <a href="#" class="school-tabs-value">Контакты</a>
                             <ul>
                                 <li class="active"><a href="#">Контакты</a></li>
                                 <li><a href="#">О школе</a></li>
@@ -559,7 +561,7 @@
                                                 <div class="detail-row-value"><a href="#">molod@bkc.ru</a></div>
                                             </div>
 
-                                            <div class="detail-row">
+                                            <div class="detail-row detail-row-2">
                                                 <div class="detail-row-name">График&nbsp;работы</div>
                                                 <div class="detail-row-value">
                                                     <div class="schedule">
@@ -583,7 +585,7 @@
                                                 </div>
                                             </div>
 
-                                            <div class="detail-row">
+                                            <div class="detail-row detail-row-2">
                                                 <div class="detail-row-name">Социальные сети</div>
                                                 <div class="detail-row-value">
                                                     <a href="#" class="school-social school-social-1"></a>
@@ -660,7 +662,7 @@
                                         <div class="openday-title"><a href="#">International Academic Programmes Centre (Академический Английский, подготовка к IELTS, TOEFL, GMAT, GRE; Foundation, Pre-Masters в Москве)</a></div>
                                         <div class="openday-anonce">Подготовка к вузам. Все об IELTS. Подготовка к IELTS, TOEFL, GMAT, GRE. Спикеры: Wayne Rimmer (Академический директор ВКС-IH), Мария Молашенко (Академический директор IAPC ВКС-IH)</div>
                                     </div>
-                                    <div class="openday-date"><span>10</span> июня <strong>18:30</strong></div>
+                                    <div class="openday-date"><span>23, 24, 25</span> сентября <strong>16.00 - 19.30</strong></div>
                                 </div>
                                 <!-- openday END -->
 
@@ -685,7 +687,7 @@
 
                         <h2>Горящие группы</h2>
 
-                        <div class="hot-courses">Курсы английского языка для взрослых <span></span> Общий курс английского языка</div>
+                        <div class="hot-courses">Курсы английского языка для взрослых <span></span><br /> Общий курс английского языка</div>
 
                         <!-- timetable list -->
                         <div class="timetable-list timetable-list-school">
@@ -702,7 +704,7 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><a href="#">Beginner</a></td>
+                                        <td>Beginner<br /><a href="#">ВКС Кунцевская</a></td>
                                         <td>
                                             <div class="timetable-week">
                                                 <div class="timetable-week-day">Пн</div>
@@ -778,7 +780,7 @@
                         </div>
                         <!-- timetable list END -->
 
-                        <div class="hot-courses">Курсы английского языка для взрослых <span></span> Общий курс английского языка</div>
+                        <div class="hot-courses">Курсы английского языка для взрослых <span></span><br /> Общий курс английского языка</div>
 
                         <!-- timetable list -->
                         <div class="timetable-list timetable-list-school">
@@ -943,6 +945,8 @@
                         </div>
                         <!-- school news END -->
 
+                        <a href="#" class="school-news-all-mobile">Все новости</a>
+
                         <hr />
 
                         <!-- school news header -->
@@ -991,8 +995,11 @@
                             </div>
                             <!-- teacher END -->
 
+                            <div class="teachers-school-ctrl"></div>
                         </div>
                         <!-- teachers END -->
+
+                        <a href="#" class="school-news-all-mobile">Все Преподаватели</a>
 
                         <hr />
 
@@ -1004,7 +1011,7 @@
                         <!-- school news header END -->
 
                         <!-- course responses -->
-                        <div class="course-responses">
+                        <div class="course-responses school-responses">
                             <!-- response -->
                             <div class="response">
                                 <div class="response-text">
@@ -1062,8 +1069,12 @@
                                 </div>
                             </div>
                             <!-- response END -->
+
+                            <div class="school-responses-ctrl"></div>
                         </div>
                         <!-- course responses END -->
+
+                        <a href="#" class="school-news-all-mobile">отзывы</a>
 
                         <hr />
 
@@ -1071,11 +1082,13 @@
                         <p>Новый сезон разговорного клуба British Club открыт! Каждый понедельник все любители английского языка встречаются в книжном магазине Москва, чтобы практиковать свои разговорные навыки. 19 января состоялось обсуждение темы: "Ireland - The Emerald Isle". Благодарим нашего замечательного ведущего и квалифицированного преподавателя ВКС Hugh Curl за увлекательную беседу.</p>
 
                         <!-- gallery -->
-                        <div class="gallery gallery-course">
+                        <div class="gallery gallery-course school-gallery">
                             <div class="gallery-item"><a href="files/gallery-1-big.jpg" rel="files/gallery-1-preview.jpg"><img src="files/gallery-1.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-2-big.jpg" rel="files/gallery-2-preview.jpg"><img src="files/gallery-2.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-3-big.jpg" rel="files/gallery-3-preview.jpg"><img src="files/gallery-3.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-4-big.jpg" rel="files/gallery-4-preview.jpg"><img src="files/gallery-4.jpg" alt="" /></a></div>
+
+                            <div class="school-gallery-ctrl"></div>
                         </div>
                         <!-- gallery END -->
 
@@ -1114,7 +1127,7 @@
             <div class="subscribe">
                 <div class="subscribe-inner">
                     <div class="subscribe-title">Будьте в курсе новостей и акций</div>
-                    <form action="#" method="post">
+                    <form action="windows/subscribe.html" method="post" class="ajaxForm">
                         <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
                         <div class="form-submit"><input type="submit" value="Ок" /></div>
                     </form>

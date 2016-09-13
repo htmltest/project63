@@ -19,6 +19,7 @@
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/datatables/datatables.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=480" />
@@ -600,11 +601,13 @@
                         <p>Новый сезон разговорного клуба British Club открыт! Каждый понедельник все любители английского языка встречаются в книжном магазине Москва, чтобы практиковать свои разговорные навыки. 19 января состоялось обсуждение темы: "Ireland - The Emerald Isle". Благодарим нашего замечательного ведущего и квалифицированного преподавателя ВКС Hugh Curl за увлекательную беседу.</p>
 
                         <!-- gallery -->
-                        <div class="gallery gallery-course">
+                        <div class="gallery gallery-course school-gallery">
                             <div class="gallery-item"><a href="files/gallery-1-big.jpg" rel="files/gallery-1-preview.jpg"><img src="files/gallery-1.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-2-big.jpg" rel="files/gallery-2-preview.jpg"><img src="files/gallery-2.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-3-big.jpg" rel="files/gallery-3-preview.jpg"><img src="files/gallery-3.jpg" alt="" /></a></div>
                             <div class="gallery-item"><a href="files/gallery-4-big.jpg" rel="files/gallery-4-preview.jpg"><img src="files/gallery-4.jpg" alt="" /></a></div>
+
+                            <div class="school-gallery-ctrl"></div>
                         </div>
                         <!-- gallery END -->
 
@@ -635,7 +638,7 @@
                         <h2>Отзывы</h2>
 
                         <!-- course responses -->
-                        <div class="course-responses">
+                        <div class="course-responses school-responses">
                             <!-- response -->
                             <div class="response">
                                 <div class="response-text">
@@ -693,6 +696,8 @@
                                 </div>
                             </div>
                             <!-- response END -->
+
+                            <div class="school-responses-ctrl"></div>
                         </div>
                         <!-- course responses END -->
 
@@ -964,7 +969,7 @@
             <div class="subscribe">
                 <div class="subscribe-inner">
                     <div class="subscribe-title">Будьте в курсе новостей и акций</div>
-                    <form action="#" method="post">
+                    <form action="windows/subscribe.html" method="post" class="ajaxForm">
                         <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
                         <div class="form-submit"><input type="submit" value="Ок" /></div>
                     </form>

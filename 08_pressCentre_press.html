@@ -19,6 +19,7 @@
         <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
         <script src="js/datatables/datatables.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=480" />
@@ -686,7 +687,7 @@
             <div class="subscribe">
                 <div class="subscribe-inner">
                     <div class="subscribe-title">Будьте в курсе новостей и акций</div>
-                    <form action="#" method="post">
+                    <form action="windows/subscribe.html" method="post" class="ajaxForm">
                         <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
                         <div class="form-submit"><input type="submit" value="Ок" /></div>
                     </form>
