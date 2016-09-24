@@ -285,6 +285,14 @@ header {background:#00bcc6}
     .header-center {display:none}
 
     .page-main header {height:850px; background:#00bcc6 url(../images/header-main.jpg) no-repeat center top; background-size:cover}
+    .page-main-london header {background-image:url(../images/header-main-london.jpg)}
+    .page-main-paris header {background-image:url(../images/header-main-paris.jpg)}
+    .page-main-prague header {background-image:url(../images/header-main-prague.jpg)}
+    .page-main-dubai header {background-image:url(../images/header-main-dubai.jpg)}
+    .page-main-rome header {background-image:url(../images/header-main-rome.jpg)}
+    .page-main-barcelona header {background-image:url(../images/header-main-barcelona.jpg)}
+    .page-main-tokyo header {background-image:url(../images/header-main-tokyo.jpg)}
+    .page-main-berlin header {background-image:url(../images/header-main-berlin.jpg)}
     .page-main .logo {width:269px; height:114px; background:url(../images/logo-main.png); top:107px; position:absolute; left:50%; margin-left:-135px}
     .page-main .header-right {display:block; width:auto; float:none}
     .page-main .header-contacts {text-align:center; padding:10px 0 0 0; font-size:20px; font-weight:normal}

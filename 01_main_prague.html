@@ -1,0 +1,1827 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>ВКС</title>
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300italic,400,500,500italic&amp;subset=latin,cyrillic" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="js/chosen/chosen.css" />
+        <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
+        <link rel="stylesheet" href="js/datatables/datatables.css" />
+
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/chosen/chosen.jquery.min.js"></script>
+        <script src="js/jquery.maskedinput.min.js"></script>
+        <script src="js/validation/jquery.validate.min.js"></script>
+        <script src="js/validation/messages_ru.js"></script>
+        <script src="js/jscrollpane/jquery.mousewheel.js"></script>
+        <script src="js/jscrollpane/jquery.jscrollpane.min.js"></script>
+        <script src="js/datatables/datatables.min.js"></script>
+        <script src="js/jquery.scrollTo.min.js"></script>
+        <script src="js/jquery.cookie.js"></script>
+        <script src="js/tools.js"></script>
+
+        <meta name="viewport" content="width=480" />
+    </head>
+
+    <body class="page-main page-main-prague">
+        <a href="#" class="warning-link"></a>
+        <div class="warning-content">
+            <div class="warning">
+                <div class="warning-logo"><img src="images/logo.png" alt="" width="282" height="120" /></div>
+                <h1>Уважаемый посетитель сайта ВКС International House!</h1>
+                <p>Последние несколько месяцев мы занимались улучшением и доработкой нашего сайта и теперь готовы представить вам результаты наших усилий.</p>
+                <p>Вы попали в число тех посетилей, которым посчастливилось первым увидеть новую версию.</p>
+                <p>Мы хотели бы попросить вас помочь нам: если вы найдете какую-либо ошибку или у вас есть пожелания о том, как можно улучшить работу сайта - напишите, пожалуйста, нам.</p>
+                <p>Мы добавили специальную форму, в которую Вы можете отправить все сообщения.</p>
+                <div class="warning-close"><a href="#">Открыть новую версию сайта</a></div>
+            </div>
+        </div>
+
+        <a href="#" class="suggest-link">Нашли ошибку?<br />Есть пожелание?</a>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+
+            <header>
+                <div class="header-inner">
+                    <div class="header-left">
+                        <a href="#" class="header-user"><span>Личный кабинет</span></a>
+
+                        <div class="header-social">
+                            <a href="#" class="header-social-1"></a>
+                            <a href="#" class="header-social-2"></a>
+                            <a href="#" class="header-social-3"></a>
+                            <a href="#" class="header-social-4"></a>
+                            <a href="#" class="header-social-5"></a>
+                        </div>
+
+                        <div class="logo"><img src="images/logo.png" alt="" width="282" height="120" /></div>
+                    </div>
+
+                    <div class="header-right">
+                        <div class="header-contacts">
+                            <a href="#" class="header-address"><span>Адреса школ</span></a>
+                            <a href="#" class="header-phone"><span><em>+7 495</em> 737-52-25</span></a>
+                            <div class="header-callback">
+                                <a href="#" class="header-callback-close"></a>
+                                <div class="header-callback-content">
+                                    <div class="header-callback-text">Оставьте свой номер телефона и мы перезвоним вам в ближайшее время</div>
+                                    <form action="#" method="post">
+                                        <div class="form-input"><input type="text" name="phone" class="required maskPhone" /></div>
+                                        <div class="form-submit"><input type="submit" value="ок" /></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="windows/order.html" class="header-link-order window-link">Заявка на обучение</a>
+                        <a href="#" class="header-link-test">Пройти онлайн-тест</a>
+                    </div>
+
+                    <div class="header-center"><img src="images/N1-prague.png" alt="" width="370" height="167" /></div>
+                </div>
+            </header>
+
+            <a href="#" class="nav-menu-mobile-link"></a>
+            <div class="nav-menu-mobile">
+                <div class="nav-menu-mobile-level-1"></div>
+                <div class="nav-menu-mobile-level-2"></div>
+                <div class="nav-menu-mobile-level-3"></div>
+            </div>
+
+            <!-- nav -->
+            <div class="nav">
+                <div class="nav-inner">
+
+                    <div class="top-menu">
+                        <ul>
+                            <li class="with-submenu">
+                                <a href="#">О компании</a>
+                                <ul>
+                                    <li><a href="#">Миссия и корпоративная культура</a></li>
+                                    <li><a href="#">Лицензии и дипломы</a></li>
+                                    <li><a href="#">Социальная ответственность</a></li>
+                                    <li><a href="#">Наши партнёры</a></li>
+                                    <li><a href="#">Карьера в ВКС-IH</a></li>
+                                    <li><a href="#">Вакансии</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Дни открытых дверей</a></li>
+                            <li><a href="#">Методика обучения</a></li>
+                            <li><a href="#">Наши преподаватели</a></li>
+                            <li><a href="#">Отзывы студентов и учителей</a></li>
+                            <li><a href="#">Видео уроков и мероприятий</a></li>
+                            <li class="with-submenu">
+                                <a href="#">Пресс-центр</a>
+                                <ul>
+                                    <li><a href="#"><div>Новости ВКС</div></a></li>
+                                    <li><a href="#"><div>Акции</div></a></li>
+                                    <li><a href="#"><div>Отчеты с мероприятий</div></a></li>
+                                    <li><a href="#"><div>ВКС в СМИ</div></a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Адреса школ</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <div class="top-menu-sub">
+                            <div class="top-menu-sub-title"></div>
+                            <div class="top-menu-sub-content"></div>
+                        </div>
+                    </div>
+
+                    <a href="#" class="top-menu-link"></a>
+
+                    <a href="#" class="search-link"></a>
+
+                    <div class="search">
+                        <form action="#" method="post">
+                            <div class="search-input"><input type="text" value="" placeholder="Поиск по сайту" /></div>
+                            <div class="search-submit"><input type="submit" value="" /></div>
+                        </form>
+                    </div>
+
+                    <ul class="nav-menu">
+                        <li class="nav-menu-with-submenu">
+                            <a href="#"><span class="nav-menu-1"></span>Курсы для&nbsp;взрослых</a>
+
+                            <!-- submenu -->
+                            <div class="submenu">
+                                <!-- submenu langs -->
+                                <div class="submenu-langs">
+                                    <div class="submenu-langs-list">
+                                        <ul>
+                                            <li class="active"><a href="#" class="submenu-lang-01">Английский</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                            <li><a href="#" class="submenu-lang-04">Итальянский</a></li>
+                                            <li><a href="#" class="submenu-lang-05">Испанский</a></li>
+                                            <li><a href="#" class="submenu-lang-06">Китайский</a></li>
+                                            <li><a href="#" class="submenu-lang-07">Японский</a></li>
+                                            <li><a href="#" class="submenu-lang-08">Чешский</a></li>
+                                            <li><a href="#" class="submenu-lang-09">Арабский</a></li>
+                                            <li><a href="#" class="submenu-lang-10">Португальский</a></li>
+                                            <li><a href="#" class="submenu-lang-11">Греческий</a></li>
+                                            <li><a href="#" class="submenu-lang-12">Russian</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="submenu-langs-prev disabled"></a>
+                                    <a href="#" class="submenu-langs-next disabled"></a>
+                                </div>
+                                <!-- submenu langs END -->
+
+                                <!-- submenu tabs -->
+                                <div class="submenu-tabs">
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab active">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/lang-icon-04-a.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/lang-icon-08-a.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/lang-icon-12-a.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                        <!-- submenu banners -->
+                                        <div class="submenu-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- submenu banners END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/lang-icon-04-a.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/lang-icon-08-a.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/lang-icon-12-a.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                </div>
+                                <!-- submenu tabs END -->
+
+                            </div>
+                            <!-- submenu END -->
+
+                        </li>
+                        <li class="nav-menu-with-submenu">
+                            <a href="#"><span class="nav-menu-2"></span>Курсы&nbsp;для&nbsp;детей и&nbsp;подростков</a>
+
+                            <!-- submenu -->
+                            <div class="submenu">
+                                <!-- submenu langs -->
+                                <div class="submenu-langs">
+                                    <div class="submenu-langs-list">
+                                        <ul>
+                                            <li class="active"><a href="#" class="submenu-lang-01">Английский</a></li>
+                                            <li><a href="#" class="submenu-lang-02">Немецкий</a></li>
+                                            <li><a href="#" class="submenu-lang-03">Французский</a></li>
+                                            <li><a href="#" class="submenu-lang-04">Итальянский</a></li>
+                                            <li><a href="#" class="submenu-lang-05">Испанский</a></li>
+                                            <li><a href="#" class="submenu-lang-06">Китайский</a></li>
+                                            <li><a href="#" class="submenu-lang-07">Японский</a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="submenu-langs-prev disabled"></a>
+                                    <a href="#" class="submenu-langs-next disabled"></a>
+                                </div>
+                                <!-- submenu langs END -->
+
+                                <!-- submenu tabs -->
+                                <div class="submenu-tabs">
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab active">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/lang-icon-04-a.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/lang-icon-08-a.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/lang-icon-12-a.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                        <!-- submenu banners -->
+                                        <div class="submenu-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- submenu banners END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/lang-icon-04-a.png" alt="" width="40" height="40" />Интенсивные курсы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/lang-icon-08-a.png" alt="" width="40" height="40" />Разговорные курсы и клубы</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/lang-icon-12-a.png" alt="" width="40" height="40" />Английский по доступным ценам</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/lang-icon-02-a.png" alt="" width="40" height="40" />Экспресс программы 2016</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/lang-icon-03-a.png" alt="" width="40" height="40" />Академический английский</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/lang-icon-06-a.png" alt="" width="40" height="40" />Общий курс для взрослых</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/lang-icon-07-a.png" alt="" width="40" height="40" />Деловой английский для взрослых</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/lang-icon-10-a.png" alt="" width="40" height="40" />Индивидуальное обучение</span></a></div>
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/lang-icon-11-a.png" alt="" width="40" height="40" />Обучение по Skype</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                    <!-- submenu tab -->
+                                    <div class="submenu-tab">
+
+                                        <!-- submenu info -->
+                                        <div class="submenu-info">
+                                            <div class="submenu-info-cols">
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/lang-icon-01-a.png" alt="" width="40" height="40" />Летние программы 2016</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/lang-icon-05-a.png" alt="" width="40" height="40" />Однодневные тренинги</span></a></div>
+                                                </div>
+
+                                                <div class="submenu-info-col">
+                                                    <div class="submenu-info-item"><a href="#"><span><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/lang-icon-09-a.png" alt="" width="40" height="40" />Международные программы в Москве</span></a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- submenu info END -->
+
+                                    </div>
+                                    <!-- submenu tab END -->
+
+                                </div>
+                                <!-- submenu tabs END -->
+
+                            </div>
+                            <!-- submenu END -->
+
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-3"></span>Курсы для преподавателей</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-4"></span>Международные экзамены</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-5"></span>Обучение зарубежом</a>
+                        </li>
+                        <li>
+                            <a href="#"><span class="nav-menu-6"></span>Корпоративное обучение</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- nav END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- main -->
+                <div class="main">
+                    <div class="main-banner-1">
+                        <div class="main-banner-title">Крупнейшая сеть<br />языковых школ в Москве</div>
+                        <div class="main-banner-text">
+                            <ul>
+                                <li>Более <a href="#">35 школ</a> в Москве и области</li>
+                                <li>Более <a href="#">200 преподавателей</a></li>
+                                <li>Более <a href="#">1 миллиона выпускников</a> с 1992 года</li>
+                            </ul>
+                        </div>
+                        <a href="#" class="main-banner-link">Подробнее</a>
+                    </div>
+                    <div class="main-banner-2">
+                        <div class="main-banner-logo"></div>
+                        <div class="main-banner-title">Летний набор<br />в подмосковный лагерь</div>
+                        <div class="main-banner-text">Для детей 10-14 лет. Отдых + English</div>
+                        <a href="#" class="main-banner-link">Заказать</a>
+                    </div>
+                    <div class="main-banner-3">
+                        <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                        <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                        <a href="#" class="main-banner-link">Заказать</a>
+                    </div>
+                    <div class="main-banner-4">
+                        <div class="main-banner-title">Беспроигрышная<br />лотерея от BKC-IH</div>
+                        <div class="main-banner-text">C 21 апреля по 27 мая испытай<br />свою удачу! Акция продлена!</div>
+                        <a href="#" class="main-banner-link">Играть</a>
+                    </div>
+                    <div class="main-banner-5">
+                        <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                        <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                        <a href="#" class="main-banner-link">Заказать</a>
+                    </div>
+                </div>
+                <!-- main END -->
+
+                <!-- navigator -->
+                <div class="navigator">
+                    <div class="navigator-title">Навигатор по самым интересным<br />программам и курсам</div>
+                    <!-- navigator container -->
+                    <div class="navigator-container">
+                        <!-- navigator langs -->
+                        <div class="navigator-langs">
+                            <div class="navigator-langs-list">
+                                <ul>
+                                    <li class="active"><a href="#" class="navigator-lang-01">Английский</a></li>
+                                    <li><a href="#" class="navigator-lang-02">Немецкий</a></li>
+                                    <li><a href="#" class="navigator-lang-03">Французский</a></li>
+                                    <li><a href="#" class="navigator-lang-04">Итальянский</a></li>
+                                    <li><a href="#" class="navigator-lang-05">Испанский</a></li>
+                                    <li><a href="#" class="navigator-lang-06">Китайский</a></li>
+                                    <li><a href="#" class="navigator-lang-07">Японский</a></li>
+                                    <li><a href="#" class="navigator-lang-08">Чешский</a></li>
+                                    <li><a href="#" class="navigator-lang-09">Арабский</a></li>
+                                    <li><a href="#" class="navigator-lang-10">Португальский</a></li>
+                                    <li><a href="#" class="navigator-lang-11">Греческий</a></li>
+                                    <li><a href="#" class="navigator-lang-12">Russian</a></li>
+                                    <li><a href="#" class="navigator-lang-02">Немецкий</a></li>
+                                    <li><a href="#" class="navigator-lang-03">Французский</a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="navigator-langs-prev"></a>
+                            <a href="#" class="navigator-langs-next"></a>
+                        </div>
+                        <!-- navigator langs END -->
+
+                        <!-- navigator tabs -->
+                        <div class="navigator-tabs">
+                            <!-- navigator tab -->
+                            <div class="navigator-tab active">
+
+                                <!-- navigator sections -->
+                                <div class="navigator-sections">
+                                    <div class="navigator-sections-current">Курсы для&nbsp;взрослых</div>
+                                    <ul>
+                                        <li class="active"><a href="#">Курсы для&nbsp;взрослых</a></li>
+                                        <li><a href="#">Курсы&nbsp;для&nbsp;детей и&nbsp;подростков</a></li>
+                                        <li><a href="#">Курсы для преподавателей</a></li>
+                                        <li><a href="#">Международные экзамены</a></li>
+                                        <li><a href="#">Обучение зарубежом</a></li>
+                                        <li><a href="#">Корпоративное обучение</a></li>
+                                    </ul>
+                                </div>
+                                <!-- navigator sections END -->
+
+                                <!-- navigator sections tabs -->
+                                <div class="navigator-sections-tabs">
+                                    <!-- navigator sections tab -->
+                                    <div class="navigator-sections-tab active">
+                                        <!-- navigator info -->
+                                        <div class="navigator-info">
+                                            <h2>Курсы для взрослых</h2>
+                                            <p>Желаете разговаривать на иностранном языке также хорошо, как и на русском? Хотите путешествовать, работать, эмигрировать - необходимо знание языка? Подайте заявку на изучение иностранного языка в школу ВКС-IH. У нас Вы можете самостоятельно выбрать для себя максимально удобный график обучения. Всё, что нужно, заполнить несколько граф, после чего наш консультант свяжется с Вами и ответит на любые вопросы, поможет подобрать нужную группу, расскажет об учебных материалах и ответит на все интересующие вопросы.</p>
+                                            <div class="navigator-info-cols">
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-01-a.png" alt="" width="60" height="60" /><span>Летние программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-02-a.png" alt="" width="60" height="60" /><span>Экспресс программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-03-a.png" alt="" width="60" height="60" /><span>Академический английский</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-04-a.png" alt="" width="60" height="60" /><span>Интенсивные курсы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-05-a.png" alt="" width="60" height="60" /><span>Однодневные тренинги</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-06-a.png" alt="" width="60" height="60" /><span>Общий курс для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-07-a.png" alt="" width="60" height="60" /><span>Деловой английский для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-08-a.png" alt="" width="60" height="60" /><span>Разговорные курсы и клубы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-09-a.png" alt="" width="60" height="60" /><span>Международные программы в Москве</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-10-a.png" alt="" width="60" height="60" /><span>Индивидуальное обучение</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-11-a.png" alt="" width="60" height="60" /><span>Обучение по Skype</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-12-a.png" alt="" width="60" height="60" /><span>Английский по доступным ценам</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navigator-info-cols-ctrl"></div>
+                                        </div>
+                                        <!-- navigator info END -->
+
+                                        <!-- order -->
+                                        <div class="order">
+                                            <h2>Сложно выбрать?</h2>
+                                            <div class="order-text">Оставьте заявку, и наши специалисты помогут найти максимально подходящий для вас курс!</div>
+                                            <form action="#" method="post">
+                                                <div class="form-row">
+                                                    <div class="form-label">Ваш телефон</div>
+                                                    <div class="form-field">
+                                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Уровень языка</div>
+                                                    <div class="form-field">
+                                                        <div class="form-select">
+                                                            <select name="level" data-placeholder="Уровень языка" class="required">
+                                                                <option value=""></option>
+                                                                <option value="1">Начинающий</option>
+                                                                <option value="2">Средний</option>
+                                                                <option value="3">Высокий</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Удобное время занятий</div>
+                                                    <div class="form-field">
+                                                        <div class="form-radios">
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="1" checked="checked" /></span>Любое</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="2" /></span>Утро</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="3" /></span>День</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="4" /></span>Вечер</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-submit"><input type="submit" value="Подать заявку" /></div>
+                                            </form>
+                                        </div>
+                                        <!-- order END -->
+
+                                        <!-- navigator banners -->
+                                        <div class="navigator-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- navigator banners END -->
+
+                                    </div>
+                                    <!-- navigator sections tab END -->
+
+                                    <!-- navigator sections tab -->
+                                    <div class="navigator-sections-tab">
+                                        <!-- navigator info -->
+                                        <div class="navigator-info">
+                                            <h2>Курсы для подростков</h2>
+                                            <p>Желаете разговаривать на иностранном языке также хорошо, как и на русском? Хотите путешествовать, работать, эмигрировать - необходимо знание языка? Подайте заявку на изучение иностранного языка в школу ВКС-IH. У нас Вы можете самостоятельно выбрать для себя максимально удобный график обучения. Всё, что нужно, заполнить несколько граф, после чего наш консультант свяжется с Вами и ответит на любые вопросы, поможет подобрать нужную группу, расскажет об учебных материалах и ответит на все интересующие вопросы.</p>
+                                            <div class="navigator-info-cols">
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-02-a.png" alt="" width="60" height="60" /><span>Экспресс программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-03-a.png" alt="" width="60" height="60" /><span>Академический английский</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-04-a.png" alt="" width="60" height="60" /><span>Интенсивные курсы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-05-a.png" alt="" width="60" height="60" /><span>Однодневные тренинги</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-06-a.png" alt="" width="60" height="60" /><span>Общий курс для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-08-a.png" alt="" width="60" height="60" /><span>Разговорные курсы и клубы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-09-a.png" alt="" width="60" height="60" /><span>Международные программы в Москве</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-10-a.png" alt="" width="60" height="60" /><span>Индивидуальное обучение</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-11-a.png" alt="" width="60" height="60" /><span>Обучение по Skype</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-12-a.png" alt="" width="60" height="60" /><span>Английский по доступным ценам</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navigator-info-cols-ctrl"></div>
+                                        </div>
+                                        <!-- navigator info END -->
+
+                                        <!-- order -->
+                                        <div class="order">
+                                            <h2>Сложно выбрать?</h2>
+                                            <div class="order-text">Оставьте заявку, и наши специалисты помогут найти максимально подходящий для вас курс!</div>
+                                            <form action="#" method="post">
+                                                <div class="form-row">
+                                                    <div class="form-label">Ваш телефон</div>
+                                                    <div class="form-field">
+                                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Уровень языка</div>
+                                                    <div class="form-field">
+                                                        <div class="form-select">
+                                                            <select name="level" data-placeholder="Уровень языка" class="required">
+                                                                <option value=""></option>
+                                                                <option value="1">Начинающий</option>
+                                                                <option value="2">Средний</option>
+                                                                <option value="3">Высокий</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Удобное время занятий</div>
+                                                    <div class="form-field">
+                                                        <div class="form-radios">
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="1" checked="checked" /></span>Любое</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="2" /></span>Утро</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="3" /></span>День</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="4" /></span>Вечер</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-submit"><input type="submit" value="Подать заявку" /></div>
+                                            </form>
+                                        </div>
+                                        <!-- order END -->
+
+                                    </div>
+                                    <!-- navigator sections tab END -->
+                                </div>
+                                <!-- navigator sections tabs END -->
+
+                            </div>
+                            <!-- navigator tab END -->
+
+                            <!-- navigator tab -->
+                            <div class="navigator-tab">
+
+                                <!-- navigator sections -->
+                                <div class="navigator-sections">
+                                    <div class="navigator-sections-current">Курсы для&nbsp;взрослых</div>
+                                    <ul>
+                                        <li class="active"><a href="#">Курсы для&nbsp;взрослых</a></li>
+                                        <li><a href="#">Курсы&nbsp;для&nbsp;детей и&nbsp;подростков</a></li>
+                                    </ul>
+                                </div>
+                                <!-- navigator sections END -->
+
+                                <!-- navigator sections tabs -->
+                                <div class="navigator-sections-tabs">
+                                    <!-- navigator sections tab -->
+                                    <div class="navigator-sections-tab active">
+                                        <!-- navigator info -->
+                                        <div class="navigator-info">
+                                            <h2>Курсы для взрослых</h2>
+                                            <p>Желаете разговаривать на иностранном языке также хорошо, как и на русском? Хотите путешествовать, работать, эмигрировать - необходимо знание языка? Подайте заявку на изучение иностранного языка в школу ВКС-IH. У нас Вы можете самостоятельно выбрать для себя максимально удобный график обучения. Всё, что нужно, заполнить несколько граф, после чего наш консультант свяжется с Вами и ответит на любые вопросы, поможет подобрать нужную группу, расскажет об учебных материалах и ответит на все интересующие вопросы.</p>
+                                            <div class="navigator-info-cols">
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-01.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-01-a.png" alt="" width="60" height="60" /><span>Летние программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-02-a.png" alt="" width="60" height="60" /><span>Экспресс программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-03-a.png" alt="" width="60" height="60" /><span>Академический английский</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-04-a.png" alt="" width="60" height="60" /><span>Интенсивные курсы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-05-a.png" alt="" width="60" height="60" /><span>Однодневные тренинги</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-06-a.png" alt="" width="60" height="60" /><span>Общий курс для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-07.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-07-a.png" alt="" width="60" height="60" /><span>Деловой английский для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-08-a.png" alt="" width="60" height="60" /><span>Разговорные курсы и клубы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-09-a.png" alt="" width="60" height="60" /><span>Международные программы в Москве</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-10-a.png" alt="" width="60" height="60" /><span>Индивидуальное обучение</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-11-a.png" alt="" width="60" height="60" /><span>Обучение по Skype</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-12-a.png" alt="" width="60" height="60" /><span>Английский по доступным ценам</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navigator-info-cols-ctrl"></div>
+                                        </div>
+                                        <!-- navigator info END -->
+
+                                        <!-- order -->
+                                        <div class="order">
+                                            <h2>Сложно выбрать?</h2>
+                                            <div class="order-text">Оставьте заявку, и наши специалисты помогут найти максимально подходящий для вас курс!</div>
+                                            <form action="#" method="post">
+                                                <div class="form-row">
+                                                    <div class="form-label">Ваш телефон</div>
+                                                    <div class="form-field">
+                                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Уровень языка</div>
+                                                    <div class="form-field">
+                                                        <div class="form-select">
+                                                            <select name="level" data-placeholder="Уровень языка" class="required">
+                                                                <option value=""></option>
+                                                                <option value="1">Начинающий</option>
+                                                                <option value="2">Средний</option>
+                                                                <option value="3">Высокий</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Удобное время занятий</div>
+                                                    <div class="form-field">
+                                                        <div class="form-radios">
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="1" checked="checked" /></span>Любое</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="2" /></span>Утро</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="3" /></span>День</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="4" /></span>Вечер</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-submit"><input type="submit" value="Подать заявку" /></div>
+                                            </form>
+                                        </div>
+                                        <!-- order END -->
+
+                                        <!-- navigator banners -->
+                                        <div class="navigator-banners">
+                                            <div class="main-banner-3">
+                                                <div class="main-banner-title">Горящие<br />группы месяца!</div>
+                                                <div class="main-banner-text">Открыт набор в ГОРЯЩИЕ этого месяца!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                            <div class="main-banner-5">
+                                                <div class="main-banner-title">4 стратегии экономии<br />от ВКС-IH</div>
+                                                <div class="main-banner-text">Изучайте иностранные языки прямо в офисе!</div>
+                                                <a href="#" class="main-banner-link">Заказать</a>
+                                            </div>
+                                        </div>
+                                        <!-- navigator banners END -->
+
+                                    </div>
+                                    <!-- navigator sections tab END -->
+
+                                    <!-- navigator sections tab -->
+                                    <div class="navigator-sections-tab">
+                                        <!-- navigator info -->
+                                        <div class="navigator-info">
+                                            <h2>Курсы для подростков</h2>
+                                            <p>Желаете разговаривать на иностранном языке также хорошо, как и на русском? Хотите путешествовать, работать, эмигрировать - необходимо знание языка? Подайте заявку на изучение иностранного языка в школу ВКС-IH. У нас Вы можете самостоятельно выбрать для себя максимально удобный график обучения. Всё, что нужно, заполнить несколько граф, после чего наш консультант свяжется с Вами и ответит на любые вопросы, поможет подобрать нужную группу, расскажет об учебных материалах и ответит на все интересующие вопросы.</p>
+                                            <div class="navigator-info-cols">
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-02.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-02-a.png" alt="" width="60" height="60" /><span>Экспресс программы 2016</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-03.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-03-a.png" alt="" width="60" height="60" /><span>Академический английский</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-04.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-04-a.png" alt="" width="60" height="60" /><span>Интенсивные курсы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-05.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-05-a.png" alt="" width="60" height="60" /><span>Однодневные тренинги</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-06.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-06-a.png" alt="" width="60" height="60" /><span>Общий курс для взрослых</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="navigator-info-col">
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-08.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-08-a.png" alt="" width="60" height="60" /><span>Разговорные курсы и клубы</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-09.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-09-a.png" alt="" width="60" height="60" /><span>Международные программы в Москве</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-10.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-10-a.png" alt="" width="60" height="60" /><span>Индивидуальное обучение</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-11.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-11-a.png" alt="" width="60" height="60" /><span>Обучение по Skype</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="navigator-info-item">
+                                                        <div class="navigator-info-item-title"><a href="#"><img src="images/lang-icon-12.png" alt="" width="40" height="40" /><img src="images/mobile-lang-icon-12-a.png" alt="" width="60" height="60" /><span>Английский по доступным ценам</span></a></div>
+                                                        <div class="navigator-info-item-detail">
+                                                            <ul>
+                                                                <li><a href="#">Общий курс</a></li>
+                                                                <li><a href="#">Интенсивный курс</a></li>
+                                                                <li><a href="#">Разговорный и письменный курс</a></li>
+                                                                <li><a href="#">Разговорный курс</a></li>
+                                                            </ul>
+                                                            <a href="#" class="navigator-info-item-detail-close"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="navigator-info-cols-ctrl"></div>
+                                        </div>
+                                        <!-- navigator info END -->
+
+                                        <!-- order -->
+                                        <div class="order">
+                                            <h2>Сложно выбрать?</h2>
+                                            <div class="order-text">Оставьте заявку, и наши специалисты помогут найти максимально подходящий для вас курс!</div>
+                                            <form action="#" method="post">
+                                                <div class="form-row">
+                                                    <div class="form-label">Ваш телефон</div>
+                                                    <div class="form-field">
+                                                        <div class="form-input"><input type="text" name="phone" value="" class="required maskPhone" /></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Уровень языка</div>
+                                                    <div class="form-field">
+                                                        <div class="form-select">
+                                                            <select name="level" data-placeholder="Уровень языка" class="required">
+                                                                <option value=""></option>
+                                                                <option value="1">Начинающий</option>
+                                                                <option value="2">Средний</option>
+                                                                <option value="3">Высокий</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-row">
+                                                    <div class="form-label">Удобное время занятий</div>
+                                                    <div class="form-field">
+                                                        <div class="form-radios">
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="1" checked="checked" /></span>Любое</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="2" /></span>Утро</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="3" /></span>День</div>
+                                                            <div class="form-radio"><span><input type="radio" name="time" value="4" /></span>Вечер</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-submit"><input type="submit" value="Подать заявку" /></div>
+                                            </form>
+                                        </div>
+                                        <!-- order END -->
+
+                                    </div>
+                                    <!-- navigator sections tab END -->
+                                </div>
+                                <!-- navigator sections tabs END -->
+
+                            </div>
+                            <!-- navigator tab END -->
+                        </div>
+                        <!-- navigator tabs END -->
+
+                    </div>
+                    <!-- navigator container END -->
+                </div>
+                <!-- navigator END -->
+
+                <!-- main advertising -->
+                <div class="main-advertising">
+                    <h2>Акции</h2>
+                    <div class="main-advertising-cols">
+                        <div class="main-advertising-col">
+                            <div class="main-advertising-img"><a href="#"><img src="files/main-advertising-1.jpg" alt="" /></a></div>
+                            <div class="main-advertising-title"><a href="#">Двухдневный тренинг по французской фонетике</a></div>
+                            <div class="main-advertising-anonce">Французский язык красивый, мелодичный и его невозможно перепутать ни с одним другим языком. И это, в первую очередь, благодаря его фонетике, то есть произношению. Если вы любите говорить на французском, так как любим мы, то приглашаем вас на двухдневный тренинг по французской фонетике.</div>
+                            <div class="main-advertising-date">31 мая 2016</div>
+                        </div>
+                        <div class="main-advertising-col">
+                            <div class="main-advertising-img"><a href="#"><img src="files/main-advertising-2.jpg" alt="" /></a></div>
+                            <div class="main-advertising-title"><a href="#">Черная пятница! 35% скидка на летнюю британскую школу</a></div>
+                            <div class="main-advertising-anonce">Черная пятница! Только один день !  Не упустите шанс подарить незабываемое лето своим детям и сэкономить свой бюджет! 35% СКИДКА - максимальная выгода!</div>
+                            <div class="main-advertising-date">31 мая 2016</div>
+                        </div>
+                    </div>
+                    <div class="main-advertising-ctrl"></div>
+                    <a href="#" class="btn-more">Больше Акций</a>
+                </div>
+                <!-- main advertising END -->
+
+                <!-- main news -->
+                <div class="main-news">
+                    <h2>Новости</h2>
+                    <div class="main-news-cols">
+                        <div class="main-news-col">
+                            <div class="main-news-title"><a href="#">Итальянское лето</a></div>
+                            <div class="main-news-anonce">Приглашаем вас в присоединиться к нашим бесплатным занятиям по итальянскому языку. В июне два разговорных клуба пройдут на разных площадках: в книжном «Москва» и в саду «Эрмитаж».</div>
+                            <div class="main-news-date">7 июня 2016</div>
+                        </div>
+                        <div class="main-news-col">
+                            <div class="main-news-title"><a href="#">Двухдневный тренинг по&nbsp;французской фонетике</a></div>
+                            <div class="main-news-anonce">Французский язык красивый, мелодичный и его невозможно перепутать ни с одним другим языком. И это, в первую очередь, благодаря его фонетике, то есть произношению. Если вы любите говорить на французском, так как любим мы, то приглашаем вас на двухдневный тренинг по французской фонетике.</div>
+                            <div class="main-news-date">31 мая 2016</div>
+                        </div>
+                        <div class="main-news-col">
+                            <div class="main-news-title"><a href="#">Английский для&nbsp;жаворонков</a></div>
+                            <div class="main-news-anonce">Ни для кого не секрет, что самое лучшее время для получения знаний – это утро. Ведь именно в утренние часы наш мозг максимально активен, а после 13.00 идет энергетический спад, и запоминать какую-либо информацию становится труднее.</div>
+                            <div class="main-news-date">7 июня 2016</div>
+                        </div>
+                        <div class="main-news-col">
+                            <div class="main-news-title"><a href="#">Летние каникулы зарубежом</a></div>
+                            <div class="main-news-anonce">с 3 по 17 июля. Стартовал набор для детей 7 -17 лет в школу Malvern House на Кипре! Успейте записаться, количество мест ограничено!</div>
+                            <div class="main-news-date">31 мая 2016</div>
+                        </div>
+                        <div class="main-news-ctrl"></div>
+                    </div>
+                    <a href="#" class="btn-more">Больше новостей</a>
+                </div>
+                <!-- main news END -->
+
+                <!-- main subscribe -->
+                <div class="main-subscribe">
+                    <div class="subscribe-inner">
+                        <div class="subscribe-title">Хотите быть в курсе новостей и акций?</div>
+                        <div class="subscribe-text">Подписывайтесь на нашу рассылку. Вас ждем много интересного!</div>
+                        <form action="windows/subscribe.html" method="post" class="ajaxForm">
+                            <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
+                            <div class="form-submit"><input type="submit" value="Ок" /></div>
+                        </form>
+                    </div>
+                </div>
+                <!-- main subscribe END -->
+            </div>
+            <!-- container END -->
+
+            <!-- main map -->
+            <div class="main-map">
+                <h2><a href="#">Школы</a> иностранных языков ВКС в Москве и Московской области</h2>
+                <div class="main-map-hint">(цвет меток соответствует линиям метро)</div>
+                <div class="main-map-container">
+                    <div id="map"></div>
+                    <script src="http://api-maps.yandex.ru/2.1/?load=package.full&lang=ru-RU" type="text/javascript"></script>
+                    <script>
+
+                        var schools = [
+                                        [37.607697,         55.757425,          'windows/popup.html', 'International Academic Programmes Centre - подготовка к международным экзаменам и обучению за рубежом',  'red'],
+                                        [37.609802,         55.759198,          'windows/popup.html', 'ВКС Тверская/Охотный ряд',                                                                               'red'],
+                                        [37.636325,         55.76254,           'windows/popup.html', 'ВКС Чистые пруды - Центр интенсив',                                                                      'red'],
+                                        [37.67996,          55.791623,          'windows/popup.html', 'ВКС Сокольники',                                                                                         'red'],
+                                        [37.52107343914794, 55.68352470020909,  'windows/popup.html', 'ВКС Университет/Проспект Вернадского',                                                                   'red'],
+                                        [37.521444,         55.667975,          'windows/popup.html', 'ВКС Проспект Вернадского',                                                                               'red'],
+                                        [37.581954,         55.723602,          'windows/popup.html', 'ВКС Фрунзенская',                                                                                        'red'],
+                                        [37.466009,         55.66432,           'windows/popup.html', 'ВКС Юго-западная',                                                                                       'red'],
+                                        [37.43437,          55.740188,          'windows/popup.html', 'ВКС Кунцевская',                                                                                         'light-blue'],
+                                        [37.412586,         55.752496,          'windows/popup.html', 'ВКС Крылатское',                                                                                         'light-blue'],
+                                        [37.737264,         55.782456,          'windows/popup.html', 'ВКС Партизанская/Семеновская',                                                                           'light-blue'],
+                                        [37.413197,         55.803044,          'windows/popup.html', 'ВКС Строгино',                                                                                           'light-blue'],
+                                        [37.572001,         55.683458,          'windows/popup.html', 'ВКС Академическая',                                                                                      'orange'],
+                                        [37.64391099999997, 55.80649927696422,  'windows/popup.html', 'ВКС Алексеевская',                                                                                       'orange'],
+                                        [37.667204,         55.867698,          'windows/popup.html', 'ВКС Бабушкинская',                                                                                       'orange'],
+                                        [37.634209,         55.786419,          'windows/popup.html', 'ВКС Проспект Мира',                                                                                      'orange'],
+                                        [37.529047,         55.637586,          'windows/popup.html', 'ВКС Беляево',                                                                                            'orange'],
+                                        [37.590057,         55.894667,          'windows/popup.html', 'ВКС Алтуфьево',                                                                                          'grey'],
+                                        [37.570855,         55.842731,          'windows/popup.html', 'ВКС Петровско-Разумовская',                                                                              'grey'],
+                                        [37.600343,         55.606531,          'windows/popup.html', 'ВКС Пражская',                                                                                           'grey'],
+                                        [37.854251,         55.696352,          'windows/popup.html', 'ВКС Жулебино',                                                                                           'purple'],
+                                        [37.489257,         55.793212,          'windows/popup.html', 'ВКС Октябрьское Поле/Щукинская',                                                                         'purple'],
+                                        [37.531711,         55.775864,          'windows/popup.html', 'ВКС Полежаевская',                                                                                       'purple'],
+                                        [37.616863,         55.768132,          'windows/popup.html', 'ВКС Петровский бульвар-Центр интенсив',                                                                  'purple'],
+                                        [37.187275,         55.976011,          'windows/popup.html', 'ВКС Зеленоград',                                                                                         'none'],
+                                        [37.41246,          55.903726,          'windows/popup.html', 'ВКС Химки',                                                                                              'none'],
+                                        [37.545258,         55.433282,          'windows/popup.html', 'ВКС Подольск / ул. Февральская, д. 65',                                                                  'none'],
+                                        [37.497243,         55.423826,          'windows/popup.html', 'ВКС Подольск / ул. Юбилейная, дом 11А',                                                                  'none'],
+                                        [37.300898,         55.475398,          'windows/popup.html', 'ВКС Троицк',                                                                                             'none'],
+                                        [37.525953,         55.547346,          'windows/popup.html', 'ВКС Южное Бутово',                                                                                       'none'],
+                                        [37.36484949999997, 55.81758727695926,  'windows/popup.html', 'ВКС Павшинская Пойма',                                                                                   'none'],
+                                        [37.671527,         55.638035,          'windows/popup.html', 'ВКС Каширская/Кантемировская',                                                                           'green'],
+                                        [37.471354,         55.856351,          'windows/popup.html', 'ВКС Речной вокзал',                                                                                      'green'],
+                                        [37.505588,         55.818179,          'windows/popup.html', 'ВКС Войковская',                                                                                         'green'],
+                                        [37.779143,         55.75361,           'windows/popup.html', 'ВКС Перово',                                                                                             'yellow'],
+                                        [37.847927,         55.736871,          'windows/popup.html', 'ВКС Новокосино',                                                                                         'yellow'],
+                                        [37.571067,         55.761138,          'windows/popup.html', 'ВКС Красная Пресня',                                                                                     'brown']
+                                      ];
+
+                        ymaps.ready(init);
+
+                        var myMap;
+
+                        function init() {
+                            myMap = new ymaps.Map('map', {
+                                center: [55.755768, 37.617671],
+                                zoom: 10,
+                                controls: []
+                            });
+
+                            myMap.controls.add('zoomControl', {position: {left: 'auto', right: 10, top: 108}});
+                            myMap.behaviors.disable('scrollZoom');
+
+                            var MyBalloonLayout = ymaps.templateLayoutFactory.createClass(
+                                '<div class="popover">' +
+                                    '<a class="close" href="#"></a>' +
+                                    '$[[options.contentLayout]]' +
+                                '</div>', {
+                                    build: function() {
+                                        this.constructor.superclass.build.call(this);
+                                        this._$element = $('.popover', this.getParentElement());
+                                        this.applyElementOffset();
+                                        this._$element.find('.close')
+                                            .on('click', $.proxy(this.onCloseClick, this));
+                                    },
+
+                                    clear: function() {
+                                        this._$element.find('.close')
+                                            .off('click');
+                                        this.constructor.superclass.clear.call(this);
+                                    },
+
+                                    onSublayoutSizeChange: function() {
+                                        MyBalloonLayout.superclass.onSublayoutSizeChange.apply(this, arguments);
+                                        if (!this._isElement(this._$element)) {
+                                            return;
+                                        }
+                                        this.applyElementOffset();
+                                        this.events.fire('shapechange');
+                                    },
+
+                                    applyElementOffset: function() {
+                                        this._$element.css({
+                                            left: 33,
+                                            top: -76
+                                    });
+                                },
+
+                                onCloseClick: function(e) {
+                                    e.preventDefault();
+                                    this.events.fire('userclose');
+                                },
+
+                                getShape: function () {
+                                    if (!this._isElement(this._$element)) {
+                                        return MyBalloonLayout.superclass.getShape.call(this);
+                                    }
+
+                                    var position = this._$element.position();
+
+                                    return new ymaps.shape.Rectangle(new ymaps.geometry.pixel.Rectangle([
+                                        [position.left, position.top], [
+                                            position.left + this._$element[0].offsetWidth,
+                                            position.top + this._$element[0].offsetHeight
+                                        ]
+                                    ]));
+                                },
+
+                                _isElement: function(element) {
+                                    return element && element[0];
+                                }
+                            });
+
+                            var MyBalloonContentLayout = ymaps.templateLayoutFactory.createClass(
+                                '$[properties.balloonContent]'
+                            );
+
+                            for (var i = 0; i < schools.length; i++) {
+                                var curItem = schools[i];
+                                var myPlacemark = new ymaps.Placemark([curItem[1], curItem[0]], {
+                                    hintContent: curItem[3],
+                                    balloonLink: curItem[2],
+                                    balloonContent: '<div class="popup"><h3>Идет загрузка данных...</h3></div>'
+                                }, {
+                                    balloonShadow: false,
+                                    balloonLayout: MyBalloonLayout,
+                                    balloonContentLayout: MyBalloonContentLayout,
+                                    hideIconOnBalloonOpen: false,
+                                    balloonPanelMaxMapArea: 0,
+                                    iconLayout: 'default#image',
+                                    iconImageHref: 'images/map-icon-' + curItem[4] + '.png',
+                                    iconImageSize: [49, 37],
+                                    iconImageOffset: [-16, -37]
+                                });
+                                myPlacemark.events.add('balloonopen', function(e) {
+                                    var curPlacemark = e.get('target');
+                                    $.ajax({
+                                        type: 'POST',
+                                        url: curPlacemark.properties.get('balloonLink'),
+                                        dataType: 'html',
+                                        cache: false
+                                    }).done(function(html) {
+                                        curPlacemark.properties.set('balloonContent', html);
+                                    });
+                                });
+                                myMap.geoObjects.add(myPlacemark);
+                            }
+                        }
+                    </script>
+
+                    <a href="#" class="main-map-link">Школы ВКС списком</a>
+                </div>
+            </div>
+            <!-- main map END -->
+
+            <!-- container -->
+            <div class="container">
+
+                <!-- main bottom -->
+                <div class="main-bottom">
+                    <div class="main-bottom-item">
+                        <h2>Курсы иностранных языков в Москве</h2>
+                        <p>Сеть компаний ВКС-IH была основана в далеком 1992 году, и с тех пор она не уступает своего места лидера в сфере курсов иностранных языков в Москве и Московской области.</p>
+                        <p>Чем же мы отличаемся от конкурентов? Все дело в применении уникальной коммуникативной методики, которая делает процесс обучения настолько естественным, что знания усваиваются намного быстрее и легче. И, конечно же, наши преподаватели - это исключительно профессионалы высочайшего класса.</p>
+                    </div>
+                    <div class="main-bottom-item">
+                        <h2>Курсы английского от&nbsp;международных школ</h2>
+                        <p>Мы строго контролируем качество проводимых занятий на курсах английского и других иностранных языков. Следим за профессионализмом преподавателей, в этом нам помогают специалисты из IHWO (International House World Organization). Это международная сеть школ по изучению языков. ВКС-IH стала ее членом еще в 1995 году.</p>
+                        <p>Сеть IHWO существует уже больше пятидесяти лет, и за это время с ней стали сотрудничать больше, чем 150 именитых языковых школ во многих странах мира. Такую популярность International House смогла заслужить постоянно совершенствуемыми методами обучения, современным пособиям и отбору лучших преподавателей.</p>
+                    </div>
+                    <div class="main-bottom-item">
+                        <h2>Преподаватели на курсах английского языка</h2>
+                        <p>Наши педагоги принимают активное участие в составлении книг и других учебных пособий. К слову сказать, именно специалисты ВКС-IH разрабатывали такие учебники как: Language to Go, Headway и Cutting Edge, которые признаны наиболее эффективными во многих странах мира.</p>
+                        <p>При школах ВКС-IH у нас есть собственный центр для обучения преподавателей иностранных языков. Прошедшие в нем подготовку учителя становятся обладателями таких престижных сертификатов, как DELTA и CELTA. Это красноречиво свидетельствует о высоком уровне их знаний и, соответственно, эффективном преподавании.</p>
+                    </div>
+                </div>
+                <!-- main bottom END -->
+
+            </div>
+            <!-- container END -->
+
+            <!-- subscribe -->
+            <div class="subscribe">
+                <div class="subscribe-inner">
+                    <div class="subscribe-title">Будьте в курсе новостей и акций</div>
+                    <form action="windows/subscribe.html" method="post" class="ajaxForm">
+                        <div class="form-input"><input type="text" name="email" value="" placeholder="Ваш адрес электронной почты" class="required" /></div>
+                        <div class="form-submit"><input type="submit" value="Ок" /></div>
+                    </form>
+                </div>
+            </div>
+            <!-- subscribe END -->
+
+            <footer>
+                <div class="footer-inner">
+
+                    <!-- footer content -->
+                    <div class="footer-content">
+                        <div class="footer-menu">
+                            <h3><a href="#">Курсы</a></h3>
+                            <ul>
+                                <li><a href="#">Курсы для взрослых</a></li>
+                                <li><a href="#">Курсы для детей и&nbsp;подростков</a></li>
+                                <li><a href="#">Корпоративное обучение</a></li>
+                                <li><a href="#">Международные экзамены</a></li>
+                                <li><a href="#">Обучение зарубежом</a></li>
+                                <li><a href="#">Курсы для преподавателей</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Иностранные языки</a></h3>
+                            <ul>
+                                <li><a href="#">Английский</a></li>
+                                <li><a href="#">Немецкий</a></li>
+                                <li><a href="#">Испанский</a></li>
+                                <li><a href="#">Итальянский</a></li>
+                                <li><a href="#">Французский</a></li>
+                                <li><a href="#">Китайский</a></li>
+                                <li><a href="#">Японский</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Обучение за рубежом</a></h3>
+                            <ul>
+                                <li><a href="#">Языковые курсы за рубежом</a></li>
+                                <li><a href="#">Программа Foundation Year</a></li>
+                                <li><a href="#">ВКС Pre-Masters Programme</a></li>
+                                <li><a href="#">Подготовка к поступлению</a></li>
+                                <li><a href="#">Специализированные курсы и&nbsp;тренинги</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-menu">
+                            <h3><a href="#">Компания</a></h3>
+                            <ul>
+                                <li><a href="#">О компании</a></li>
+                                <li><a href="#">Методика обучения</a></li>
+                                <li><a href="#">Отзывы студентов</a></li>
+                                <li><a href="#">Преподаватели</a></li>
+                                <li><a href="#">Пресс-центр</a></li>
+                                <li><a href="#">Работа в ВКС-IH</a></li>
+                                <li><a href="#">Jobs for teachers</a></li>
+                                <li><a href="#">Партнеры</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="footer-contacts">
+                            <h3><a href="#">Контакты</a></h3>
+                            <div class="footer-phones"><span>+7 (495)</span> 737-52-25<br /><span>+7 (495)</span> 258-00-04</div>
+                            <a href="#" class="footer-callback">Обратный звонок</a>
+                            <div class="footer-callback-window">
+                                <div class="footer-callback-content">
+                                    <div class="footer-callback-text">Оставьте свой номер телефона и мы перезвоним вам в ближайшее время</div>
+                                    <form action="#" method="post">
+                                        <div class="form-input"><input type="text" name="phone" class="required maskPhone" /></div>
+                                        <div class="form-submit"><input type="submit" value="ок" /></div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="footer-email"><a href="#">info@bkc.ru</a></div>
+                            <div class="footer-social">
+                                <a href="#" class="footer-social-1"></a>
+                                <a href="#" class="footer-social-2"></a>
+                                <a href="#" class="footer-social-3"></a>
+                                <a href="#" class="footer-social-4"></a>
+                                <a href="#" class="footer-social-5"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- footer content END -->
+
+                    <!-- footer links -->
+                    <div class="footer-links">
+                        <div class="footer-logo"><img src="images/footer-logo.png" alt="" width="268" height="105" /></div>
+                        <div class="footer-charity">Выбирая обучение в BKC IH, Вы помогаете пройти реабилитацию детям, перенесшим тяжелые заболевания</div>
+                        <div class="footer-developer">Интернет-маркетинг<br /><a href="#" target="_blank">Smirnov Digital</a></div>
+                        <div class="footer-developer">Создание сайта<br /><a href="#" target="_blank">Bilingo Digital Agency</a></div>
+                    </div>
+                    <!-- footer links END -->
+
+                </div>
+            </footer>
+
+        </div>
+        <!-- wrapper END -->
+
+    </body>
+</html>
