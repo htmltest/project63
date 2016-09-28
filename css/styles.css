@@ -2354,3 +2354,38 @@ footer {background:#f7f7f7}
 .method-status:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
 .method-status-date {line-height:50px; height:50px; float:left; text-align:center; border-radius:3px; background:#fafafa; font-weight:500; width:270px}
 .method-status-link {float:left; line-height:50px; padding:0 0 0 30px}
+
+.corporate-banner {display:table; width:100%; background:#00bcc6 no-repeat center; background-size:cover; color:#fff}
+.corporate-banner-inner {display:table-cell; height:300px; vertical-align:middle}
+.corporate-banner-text {width:50%; padding:0 20px 0 40px; box-sizing:border-box}
+.corporate-banner-text-1 {font-weight:normal; font-size:25px; line-height:30px}
+.corporate-banner-text-2 {padding:17px 0 0 0}
+
+@media (max-width:1199px) {
+    .corporate-banner-text {width:auto; padding:0 30px}
+}
+
+.order-corporate {margin:0}
+.order-corporate .order-text {max-width:670px}
+.order-corporate form {max-width:670px}
+.order-corporate .form-submit {margin-left:200px; width:270px}
+
+@media (max-width:1199px) {
+    .order-corporate {padding-left:30px; padding-right:30px}
+    .order-corporate .form-submit {margin-left:0; width:auto}
+}
+
+.corporate-categories {margin:15px -15px}
+.corporate-categories:after {content:"."; display:block; clear:both; visibility:hidden; height:0}
+.corporate-category {float:left; width:33.33%; padding:15px; box-sizing:border-box}
+.corporate-category a {display:table; color:#0faab2; font-size:20px; line-height:25px; font-weight:normal; text-decoration:none; background:#fafafa; width:100%}
+.corporate-category a:hover {color:#00bcc6}
+.corporate-category span {display:table-cell; vertical-align:middle; padding:0 30px; height:100px}
+
+@media (max-width:1199px) {
+    .corporate-category {width:50%}
+}
+
+@media (max-width:767px) {
+    .corporate-category {width:100%}
+}
