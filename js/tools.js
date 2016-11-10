@@ -406,6 +406,9 @@ $(document).ready(function() {
                 windowClose();
             }
             windowOpen(html);
+            if ($('.window-new-order').length > 0) {
+                $('.window').addClass('window-container-new-order');
+            }
         });
         e.preventDefault();
     });
@@ -873,6 +876,91 @@ $(document).ready(function() {
 
         curBlock.find('.school-gallery-ctrl a.active').removeClass('active');
         curLink.addClass('active');
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-tabs-menu ul li a', function(e) {
+        var curLink = $(this);
+        var curLi = curLink.parent();
+        if (!curLi.hasClass('active')) {
+            var curIndex = $('.new-order-tabs-menu ul li').index(curLi);
+
+            switch (curIndex) {
+                case 0:
+                    $('.window-new-order').removeClass('step-2 step-3');
+                    $('.new-order-tabs-menu ul li.active').removeClass('active');
+                    curLi.addClass('active');
+
+                    $('.new-order-tab.active').removeClass('active');
+                    $('.new-order-tab').eq(curIndex).addClass('active');
+                    break;
+                case 1:
+                    if ($('.window-new-order form').valid()) {
+                        $('.window-new-order').removeClass('step-3');
+                        $('.window-new-order').addClass('step-2');
+
+                        $('.new-order-tabs-menu ul li.active').removeClass('active');
+                        curLi.addClass('active');
+
+                        $('.new-order-tab.active').removeClass('active');
+                        $('.new-order-tab').eq(curIndex).addClass('active');
+                    } else {
+                        $('.window-container-new-order').scrollTo(0, 500);
+                    }
+                    break;
+                case 2:
+                    if ($('.window-new-order form').valid() && $('.window-new-order').hasClass('step-2')) {
+                        $('.window-new-order').removeClass('step-2');
+                        $('.window-new-order').addClass('step-3');
+
+                        $('.new-order-tabs-menu ul li.active').removeClass('active');
+                        curLi.addClass('active');
+
+                        $('.new-order-tab.active').removeClass('active');
+                        $('.new-order-tab').eq(curIndex).addClass('active');
+                    }
+                    break;
+                default:
+                    break;
+            }
+        }
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-next .btn', function(e) {
+        $('.new-order-tabs-menu ul li.active').next().find('a').click();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-search-metro-start', function(e) {
+        $(this).addClass('loading');
+        $('.new-order-search-metro-results').show();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-search-metro-results .btn', function(e) {
+        $('.new-order-tabs-menu ul li.active').next().find('a').click();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-stations-item-delete', function(e) {
+        $(this).parent().remove();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-stations-item-title', function(e) {
+        $('.new-order-station-start').addClass('loading');
+        $('.new-order-station-schools').show();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-back-1', function(e) {
+        $('.new-order-tabs-menu ul li').eq(0).find('a').click();
+        e.preventDefault();
+    });
+
+    $('body').on('click', '.new-order-back-2', function(e) {
+        $('.new-order-tabs-menu ul li').eq(1).find('a').click();
         e.preventDefault();
     });
 
