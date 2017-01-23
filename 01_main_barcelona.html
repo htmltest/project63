@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="js/chosen/chosen.css" />
         <link rel="stylesheet" href="js/jscrollpane/jquery.jscrollpane.css" />
         <link rel="stylesheet" href="js/datatables/datatables.css" />
+        <link rel="stylesheet" href="js/slick/slick.css" />
 
         <script src="js/jquery-2.2.4.min.js"></script>
         <script src="js/chosen/chosen.jquery.min.js"></script>
@@ -20,6 +21,7 @@
         <script src="js/datatables/datatables.min.js"></script>
         <script src="js/jquery.scrollTo.min.js"></script>
         <script src="js/jquery.cookie.js"></script>
+        <script src="js/slick/slick.min.js"></script>
         <script src="js/tools.js"></script>
 
         <meta name="viewport" content="width=480" />
@@ -99,6 +101,7 @@
                             <li class="with-submenu">
                                 <a href="#">О компании</a>
                                 <ul>
+                                    <li><a href="#">Раздел «О компании»</a></li>
                                     <li><a href="#">Миссия и корпоративная культура</a></li>
                                     <li><a href="#">Лицензии и дипломы</a></li>
                                     <li><a href="#">Социальная ответственность</a></li>
@@ -115,6 +118,7 @@
                             <li class="with-submenu">
                                 <a href="#">Пресс-центр</a>
                                 <ul>
+                                    <li><a href="#"><div>Раздел «Пресс-центр»</div></a></li>
                                     <li><a href="#"><div>Новости ВКС</div></a></li>
                                     <li><a href="#"><div>Акции</div></a></li>
                                     <li><a href="#"><div>Отчеты с мероприятий</div></a></li>
@@ -548,25 +552,21 @@
                         <!-- navigator langs -->
                         <div class="navigator-langs">
                             <div class="navigator-langs-list">
-                                <ul>
-                                    <li class="active"><a href="#" class="navigator-lang-01">Английский</a></li>
-                                    <li><a href="#" class="navigator-lang-02">Немецкий</a></li>
-                                    <li><a href="#" class="navigator-lang-03">Французский</a></li>
-                                    <li><a href="#" class="navigator-lang-04">Итальянский</a></li>
-                                    <li><a href="#" class="navigator-lang-05">Испанский</a></li>
-                                    <li><a href="#" class="navigator-lang-06">Китайский</a></li>
-                                    <li><a href="#" class="navigator-lang-07">Японский</a></li>
-                                    <li><a href="#" class="navigator-lang-08">Чешский</a></li>
-                                    <li><a href="#" class="navigator-lang-09">Арабский</a></li>
-                                    <li><a href="#" class="navigator-lang-10">Португальский</a></li>
-                                    <li><a href="#" class="navigator-lang-11">Греческий</a></li>
-                                    <li><a href="#" class="navigator-lang-12">Russian</a></li>
-                                    <li><a href="#" class="navigator-lang-02">Немецкий</a></li>
-                                    <li><a href="#" class="navigator-lang-03">Французский</a></li>
-                                </ul>
+                                <div class="navigator-langs-list-item active"><a href="#" class="navigator-lang-01">Английский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-02">Немецкий</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-03">Французский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-04">Итальянский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-05">Испанский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-06">Китайский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-07">Японский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-08">Чешский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-09">Арабский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-10">Португальский</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-11">Греческий</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-12">Russian</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-02">Немецкий</a></div>
+                                <div class="navigator-langs-list-item"><a href="#" class="navigator-lang-03">Французский</a></div>
                             </div>
-                            <a href="#" class="navigator-langs-prev"></a>
-                            <a href="#" class="navigator-langs-next"></a>
                         </div>
                         <!-- navigator langs END -->
 
@@ -756,7 +756,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="navigator-info-cols-ctrl"></div>
                                         </div>
                                         <!-- navigator info END -->
 
@@ -960,7 +959,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="navigator-info-cols-ctrl"></div>
                                         </div>
                                         <!-- navigator info END -->
 
@@ -1195,7 +1193,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="navigator-info-cols-ctrl"></div>
                                         </div>
                                         <!-- navigator info END -->
 
@@ -1399,7 +1396,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="navigator-info-cols-ctrl"></div>
                                         </div>
                                         <!-- navigator info END -->
 
@@ -1478,7 +1474,6 @@
                             <div class="main-advertising-date">31 мая 2016</div>
                         </div>
                     </div>
-                    <div class="main-advertising-ctrl"></div>
                     <a href="#" class="btn-more">Больше Акций</a>
                 </div>
                 <!-- main advertising END -->
@@ -1507,7 +1502,6 @@
                             <div class="main-news-anonce">с 3 по 17 июля. Стартовал набор для детей 7 -17 лет в школу Malvern House на Кипре! Успейте записаться, количество мест ограничено!</div>
                             <div class="main-news-date">31 мая 2016</div>
                         </div>
-                        <div class="main-news-ctrl"></div>
                     </div>
                     <a href="#" class="btn-more">Больше новостей</a>
                 </div>
