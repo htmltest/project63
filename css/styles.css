@@ -341,8 +341,9 @@ header {background:#00bcc6}
 .top-menu ul li:before {display:none}
 .top-menu ul li a {color:#fff; text-decoration:none; padding:13px 20px 16px 20px; display:block; width:165px; white-space:normal}
 @media (min-width:1200px) {
-    .top-menu ul li a:hover {font-weight:300; background-color:#00bcc6}
+    .top-menu ul li a:hover {background-color:#213c87}
 }
+.top-menu ul li.active a {font-weight:500; background-color:#00bcc6}
 .top-menu ul li ul {display:none}
 .top-menu-sub {display:none}
 
@@ -350,11 +351,13 @@ header {background:#00bcc6}
     .top-menu {z-index:999; position:fixed; left:0; top:74px; right:0; background:#fff; padding:0; overflow:hidden; bottom:0; outline:none}
     .top-menu:before,
     .top-menu:after {display:none}
-    .top-menu > ul {padding:0 25px; position:absolute; left:0; top:0; transition:left .3s ease; z-index:2; overflow:auto; width:100%; height:100%; box-sizing:border-box}
-    .top-menu.open > ul {left:-100%}
+    .top-menu-main {position:absolute; left:0; top:0; width:100%; height:100%; z-index:2; transition:left .3s ease; overflow:auto}
+    .top-menu.open .top-menu-main {left:-100%}
+    .top-menu ul {padding:0 25px}
     .top-menu ul li {margin:0 0 -1px 0; padding:0; border-top:1px solid #e5f8f9; display:table; width:100%}
     .top-menu ul li:first-child {border-top:none}
-    .top-menu ul li a {display:table-cell; height:76px; vertical-align:middle; font-size:20px; line-height:30px; color:#231f20; width:auto; padding:0 30px; text-decoration:none}
+    .top-menu ul li a {display:table-cell; height:50px; border-top:13px solid #fff; border-bottom:13px solid #fff; vertical-align:middle; font-size:20px; line-height:30px; color:#231f20; width:auto; padding:0 30px; text-decoration:none}
+    .top-menu ul li.active a {font-weight:300; background:#fff003}
     .top-menu ul li.with-submenu > a:before {content:""; display:block; width:7px; height:14px; position:absolute; right:30px; top:31px; background:url(../images/top-menu-sub.png)}
     .top-menu-sub {display:block; position:absolute; left:100%; top:0; width:100%; height:100%; overflow:auto; transition:left .3s ease; background:#fff}
     .top-menu-sub-title {background:#fff003 url(../images/top-menu-parent.png) no-repeat 25px center; font-size:20px; line-height:30px; font-weight:500; text-transform:uppercase; display:table; width:100%}
@@ -599,7 +602,11 @@ header {background:#00bcc6}
 .left-menu ul {margin:0}
 .left-menu ul li {margin:0 0 -1px 0; padding:0; position:relative}
 .left-menu ul li:before {display:none}
-.left-menu ul li a {display:table; width:100%; border-top:1px solid #e5f8f9; line-height:20px; text-transform:uppercase; color:#0faab2}
+.left-menu ul li a {display:table; width:100%; border-top:1px solid #e5f8f9; line-height:20px; text-transform:uppercase; color:#0faab2; text-decoration:none}
+.left-menu ul li a:hover {background:#f7f7f7}
+.left-menu ul li a:hover:after {content:""; display:block; width:0; height:0; position:absolute; right:-13px; top:0; border-left:13px solid #f7f7f7; border-top:30px solid transparent; border-bottom:30px solid transparent}
+.left-menu ul li.active > a:hover:after,
+.left-menu ul li.open > a:hover:after {display:none}
 .left-menu ul li ul {display:none}
 .left-menu ul li.open ul {display:block}
 .left-menu ul li ul li a {text-transform:none}
@@ -1229,10 +1236,14 @@ header {background:#00bcc6}
 
 .navigator-langs {position:relative; text-transform:uppercase; font-weight:normal; white-space:nowrap; font-size:0; line-height:0; letter-spacing:-1px; height:82px}
 .navigator-langs-list {position:relative}
-.navigator-langs-list-item {display:inline-block; vertical-align:top; margin:0; padding:0; width:100px}
-.navigator-langs-list-item:before {width:1px; height:60px; left:0; top:13px; background:#fff; border-radius:0; opacity:.2}
-.navigator-langs-list-item a {display:block; width:99px; padding:22px 0 17px 1px; color:#fff; font-size:11px; line-height:15px; letter-spacing:0; text-align:center}
-.navigator-langs-list-item a:hover {text-decoration:none; color:rgba(255, 255, 255, .7)}
+.navigator-langs-list-item {display:inline-block; vertical-align:top; margin:0; padding:0; width:100px; position:relative}
+.navigator-langs-list-item:before {content:""; display:block; position:absolute; width:1px; height:60px; left:0; top:13px; background:#fff; border-radius:0; opacity:.2}
+.navigator-langs-list-item:first-child:before {display:none}
+@media (min-width:1200px) {
+    .navigator-langs-list-item:hover:after {content:""; display:block; position:absolute; left:0; top:13px; right:0; height:60px; background:#33c9d1}
+}
+.navigator-langs-list-item a {display:block; width:99px; padding:22px 0 17px 1px; color:rgba(255, 255, 255, .7); font-size:11px; line-height:15px; letter-spacing:0; text-align:center; position:relative; z-index:2}
+.navigator-langs-list-item a:hover {text-decoration:none; color:#fff}
 .navigator-langs-list-item.active a {color:#2b3138; font-weight:500; background:#fbfbfb; border-top:2px solid #fff003; border-radius:3px 3px 0 0; padding-top:20px}
 .navigator-langs-list-item a:before {content:""; display:block; margin:0 auto 8px auto; width:32px; height:21px; background:url(../images/flags.png)}
 .navigator-langs-list-item a.navigator-lang-01:before {background-position:left top}
@@ -1273,12 +1284,15 @@ header {background:#00bcc6}
 
 .navigator-sections {background:#fbfbfb}
 .navigator-sections-current {display:none}
-.navigator-sections ul {display:table; width:100%; margin:0 auto}
-.navigator-sections ul li {display:table-cell; margin:0; padding:0 15px; vertical-align:top; text-align:center}
+.navigator-sections ul {display:table; margin:0}
+.navigator-sections ul li {display:table-cell; margin:0; padding:15px; vertical-align:top; text-align:center; width:140px}
 .navigator-sections ul li:before {display:none}
-.navigator-sections ul li a {display:block; line-height:20px; font-weight:normal; color:#2b3138; opacity:.7; padding:20px 0; position:relative}
-.navigator-sections ul li a:before {content:""; display:block; width:1px; height:50%; position:absolute; left:0; top:20px; background:#e6e6e7}
-.navigator-sections ul li:first-child a:before {display:none}
+.navigator-sections ul li a {display:block; line-height:20px; font-weight:normal; color:#2b3138; opacity:.7; padding:20px 15px; height:40px; position:relative}
+@media (min-width:1200px) {
+    .navigator-sections ul li a:before {content:""; display:block; width:1px; height:50%; position:absolute; left:-15px; top:20px; background:#e6e6e7}
+    .navigator-sections ul li:first-child a:before {display:none}
+    .navigator-sections ul li a:hover:after {content:""; display:block; width:100%; height:4px; background:#e6e6e7; position:absolute; left:0; bottom:0; border-radius:3px 3px 0 0}
+}
 .navigator-sections ul li a:hover,
 .navigator-sections ul li.active a {opacity:1; text-decoration:none}
 .navigator-sections ul li.active a {font-weight:500}
@@ -1615,7 +1629,7 @@ footer {background:#f7f7f7}
 .window-close {display:block; z-index:99999; position:fixed; right:41px; top:31px; height:14px; padding:0 25px 0 0; background:url(../images/window-close.png) no-repeat right center; color:#0faab2; font-size:12px; line-height:14px; text-transform:uppercase}
 
 @media (max-width:1199px) {
-    .window-close {padding:0; width:14px; height:0; padding:14px 0 0 0; background-position:left top; font-size:0; line-height:0; text-indent:999px}
+    .window-close {padding:0; width:54px; height:0; padding:54px 0 0 0; background-position:left top; font-size:0; line-height:0; text-indent:999px; background:url(../images/window-close-mobile.png)}
 }
 
 .window-order {width:570px}
@@ -1805,7 +1819,7 @@ footer {background:#f7f7f7}
 .window-video-inner iframe {position:absolute; left:0; top:0; width:100%; height:100%}
 
 @media (max-width:1199px) {
-    .window-video {width:460px}
+    .window-video {width:400px}
 }
 
 .diplomas {font-size:0; line-height:0; letter-spacing:-1px; margin:0 -15px -30px -15px}
@@ -2309,7 +2323,7 @@ footer {background:#f7f7f7}
 .warning-content {display:none}
 
 .window-warning .window-overlay {background:#00bcc6}
-.window-warning .window-close {background-image:url(../images/window-close-2.png); color:#fff}
+.window-warning .window-close {background-image:url(../images/window-close-2-mobile.png); color:#fff}
 
 .warning {width:430px; color:#fff; font-size:18px}
 .warning-logo {line-height:0}
