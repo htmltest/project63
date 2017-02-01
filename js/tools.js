@@ -4,6 +4,14 @@ $(document).ready(function() {
         initForm($(this));
     });
 
+    $('.top-menu-main > ul > li').each(function() {
+        var curLI = $(this);
+        if (curLI.find('ul').length > 0) {
+            var curLink = curLI.find('> a');
+            curLI.find('ul').prepend('<li><a href="' + curLink.attr('href') + '">Раздел «' + curLink.html() + '»</a></li>');
+        }
+    });
+
     $('.top-menu-link').click(function(e) {
         $('html').removeClass('visible-mobile-nav');
 
